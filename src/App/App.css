@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Google Sans", sans-serif;
+}
+
+body {
+  background-color: #f2f4f7;
+}
+
+.active {
+  border-bottom: 3px solid #0a66ff;
+}

@@ -1,0 +1,669 @@
+{
+  "users": [
+    {
+      "id": "9000000000001",
+      "fname": "Alice",
+      "lname": "Johnson",
+      "email": "alice.johnson@example.com",
+      "usname": "alice01",
+      "notifications": [
+        {
+          "id": "9100000000001",
+          "status": "friend"
+        },
+        {
+          "id": "9100000000002",
+          "status": "like"
+        }
+      ],
+      "shorts": [
+        "https://picsum.photos/seed/short1/800/600"
+      ],
+      "photos": [
+        {
+          "id": "photo1",
+          "url": "https://picsum.photos/seed/photo1/600/600",
+          "description": "Photo number 1",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000003",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-02-28T13:14:45.730Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "nice",
+              "time": "2026-03-01T23:03:16.901Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile1/400/400",
+      "gender": "female",
+      "phone": "+37477200001",
+      "bdate": "1990-05-12",
+      "messages": [
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hello Bob!",
+              "time": "09:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Alice!",
+              "time": "09:05 PM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "05:29 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000003",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi",
+              "time": "02:56 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "me",
+              "text": "hi",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "me",
+              "text": "hi",
+              "time": "02:58 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "02:59 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "03:03 AM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "him",
+              "text": "Inch ka",
+              "time": "10:10 PM"
+            },
+            {
+              "sender": "me",
+              "text": "Ban che Bob jan du asa",
+              "time": "11:03 PM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "04:10 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "05:29 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "him",
+              "text": "Inch ka?",
+              "time": "10:11 PM"
+            },
+            {
+              "sender": "me",
+              "text": "Ban che Bob jan du asa",
+              "time": "11:03 PM"
+            },
+            {
+              "sender": "me",
+              "text": "Du vonc es?",
+              "time": "11:16 PM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "01:38 AM"
+            },
+            {
+              "sender": "me",
+              "text": "dwqjkewhj",
+              "time": "01:42 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "01:42 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "05:29 PM"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        "9000000000002",
+        "9000000000003"
+      ],
+      "password": "pass01",
+      "islog": "home",
+      "lastSeen": "online"
+    },
+    {
+      "id": "9000000000002",
+      "fname": "Bob",
+      "lname": "Smith",
+      "email": "bob.smith@example.com",
+      "usname": "bob02",
+      "notifications": [
+        {
+          "id": "9100000000003",
+          "status": "comment"
+        }
+      ],
+      "shorts": [
+        "https://picsum.photos/seed/short2/800/600"
+      ],
+      "photos": [
+        {
+          "id": "photo2",
+          "url": "https://picsum.photos/seed/photo2/600/600",
+          "description": "Photo number 2",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000003"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000001",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Wonderfull",
+              "time": "2026-02-28T13:17:25.157Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile2/400/400",
+      "gender": "male",
+      "phone": "+37477200002",
+      "bdate": "1989-07-21",
+      "messages": [
+        {
+          "friendId": "9000000000001",
+          "message": [
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "05:29 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000003",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Charlie, did you see my last post?",
+              "time": "11:00 AM"
+            },
+            {
+              "sender": "me",
+              "text": "Whats Appppppp",
+              "time": "10:51 PM"
+            },
+            {
+              "sender": "me",
+              "text": "hii",
+              "time": "10:54 PM"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        "9000000000001",
+        "9000000000003"
+      ],
+      "password": "pass02",
+      "islog": "home",
+      "lastSeen": "10:54 PM"
+    },
+    {
+      "id": "9000000000003",
+      "fname": "Charlie",
+      "lname": "Brown",
+      "email": "charlie.brown@example.com",
+      "usname": "charlie03",
+      "notifications": [
+        {
+          "id": "9100000000004",
+          "status": "like"
+        }
+      ],
+      "shorts": [
+        "https://picsum.photos/seed/short3/800/600"
+      ],
+      "photos": [
+        {
+          "id": "photo3",
+          "url": "https://picsum.photos/seed/photo3/600/600",
+          "description": "Photo number 3",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Good",
+              "time": "2026-03-01T22:54:13.065Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile3/400/400",
+      "gender": "male",
+      "phone": "+37477200003",
+      "bdate": "1992-02-14",
+      "messages": [
+        {
+          "friendId": "9000000000001",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Alice!",
+              "time": "10:05 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hey Charlie!",
+              "time": "10:10 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Fine Thanks",
+              "time": "11:04 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi",
+              "time": "02:56 AM"
+            },
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "him",
+              "text": "hi",
+              "time": "02:57 AM"
+            },
+            {
+              "sender": "him",
+              "text": "hi",
+              "time": "02:58 AM"
+            },
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "02:59 AM"
+            },
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "03:03 AM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Bob!",
+              "time": "11:10 AM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Charlie!",
+              "time": "11:15 AM"
+            },
+            {
+              "sender": "him",
+              "text": "How Are you?",
+              "time": "10:21 PM"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        "9000000000001",
+        "9000000000002"
+      ],
+      "password": "pass03",
+      "islog": "home",
+      "lastSeen": "online"
+    },
+    {
+      "id": "9000000000004",
+      "fname": "Diana",
+      "lname": "Evans",
+      "email": "diana.evans@example.com",
+      "usname": "diana04",
+      "notifications": [
+        {
+          "id": "9100000000005",
+          "status": "friend"
+        },
+        {
+          "id": "9100000000006",
+          "status": "comment"
+        }
+      ],
+      "shorts": [
+        "https://picsum.photos/seed/short4/800/600"
+      ],
+      "photos": [
+        {
+          "id": "photo4",
+          "url": "https://picsum.photos/seed/photo4/600/600",
+          "description": "Photo number 4",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile4/400/400",
+      "gender": "female",
+      "phone": "+37477200004",
+      "bdate": "1991-11-05",
+      "messages": [
+        {
+          "friendId": "9000000000003",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Charlie!",
+              "time": "12:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Diana!",
+              "time": "12:05 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000005",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Ethan, ready for the weekend?",
+              "time": "01:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Sure Diana!",
+              "time": "01:05 PM"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        "9000000000003",
+        "9000000000005"
+      ],
+      "password": "pass04",
+      "islog": "home",
+      "lastSeen": "10:54 PM"
+    },
+    {
+      "id": "9000000000005",
+      "fname": "Ethan",
+      "lname": "White",
+      "email": "ethan.white@example.com",
+      "usname": "ethan05",
+      "notifications": [
+        {
+          "id": "9100000000007",
+          "status": "like"
+        }
+      ],
+      "shorts": [
+        "https://picsum.photos/seed/short5/800/600"
+      ],
+      "photos": [
+        {
+          "id": "photo5",
+          "url": "https://picsum.photos/seed/photo5/600/600",
+          "description": "Photo number 5",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile5/400/400",
+      "gender": "male",
+      "phone": "+37477200005",
+      "bdate": "1993-03-30",
+      "messages": [
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Bob!",
+              "time": "02:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Ethan!",
+              "time": "02:05 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000004",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Diana!",
+              "time": "01:05 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hey Ethan!",
+              "time": "01:10 PM"
+            }
+          ]
+        }
+      ],
+      "friends": [
+        "9000000000002",
+        "9000000000004"
+      ],
+      "password": "pass05",
+      "islog": "home",
+      "lastSeen": "online"
+    }
+  ],
+  "games": [
+ {
+    "title": "Fireboy And Watergirl",
+    "link": "https://www.friv.com/z/games/fireboyandwatergirlforest/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/fireboyandwatergirlforest/square-gamethumb-1-fireboyandwatergirlforest.png",
+    "category": "adventures"
+  },
+  {
+    "title": "Power Pamplona",
+    "link": "https://www.friv.com/z/games/powerpamplona/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/powerpamplona/square-gamethumb-1-powerpamplona.png",
+    "category": "ride"
+  },
+  {
+    "title": "4 Colors",
+    "link": "https://www.friv.com/z/games/4colors/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/4colors/square-gamethumb-1-4colors.png",
+    "category": "desktop"
+  },
+  {
+    "title": "Mad Fish",
+    "link": "https://www.friv.com/z/games/madfish/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/madfish/square-gamethumb-1-madfish.png",
+    "category": "action"
+  },
+  {
+    "title": "Bloxorz",
+    "link": "https://www.friv.com/z/games/bloxorz/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/bloxorz/square-gamethumb-1-bloxorz.png",
+    "category": "desktop"
+  },
+  {
+    "title": "Penalty Challenge",
+    "link": "https://www.friv.com/z/games/penaltychallenge/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/penaltychallenge/square-gamethumb-1-penaltychallenge.png",
+    "category": "ride"
+  },
+  {
+    "title": "Moto X3M",
+    "link": "https://www.friv.com/z/games/motox3m/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/motox3m/square-gamethumb-1-motox3m.png",
+    "category": "ride"
+  },
+  {
+    "title": "Color Link",
+    "link": "https://www.friv.com/z/games/colorlink/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/colorlink/square-gamethumb-1-colorlink.png",
+    "category": "desktop"
+  },
+  {
+    "title": "Cascade Chaos",
+    "link": "https://www.friv.com/z/games/cascadechaos/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/cascadechaos/square-gamethumb-1-cascadechaos.png",
+    "category": "action"
+  },
+  {
+    "title": "Electric Man",
+    "link": "https://www.friv.com/z/games/electricman/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/electricman/square-gamethumb-1-electricman.png",
+    "category": "action"
+  },
+  {
+    "title": "Bad Ice Cream",
+    "link": "https://www.friv.com/z/games/badicecream/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/badicecream/square-gamethumb-1-badicecream.png",
+    "category": "adventures"
+  },
+  {
+    "title": "Snail Bob",
+    "link": "https://www.friv.com/z/games/snailbob/game.html",
+    "image": "https://images.weserv.nl/?url=www.friv.com/z/games/snailbob/square-gamethumb-1-snailbob.png",
+    "category": "adventures"
+  },
+  {
+    "title": "Biliard Pool",
+    "link": "https://www.friv.com/z/games/9ballpool/game.html",
+    "image": "https://www.coolmathgames.com/sites/default/files/Billiards_OG-logo.jpg",
+    "category": "ride"
+  },
+  {
+    "title": "Stick Archery",
+    "link": "https://www.friv.com/z/games/stickarchery/game.html",
+    "image": "https://play-lh.googleusercontent.com/ToD4HwWvPVZRRHA7NoEKJWU1aaWt9P2yc9TpQKLUDu9u7a37PoZP_Eb_e81Jmze78w=w240-h480-rw",
+    "category": "action"
+  },
+  {
+    "title": "Warship",
+    "link": "https://www.friv.com/z/games/warship/game.html",
+    "image": "https://m.media-amazon.com/images/I/81pLmwcpNuL.jpg",
+    "category": "ride"
+  },
+  {
+    "title": "Truck Loader",
+    "link": "https://www.friv.com/z/games/truckloader/game.html",
+    "image": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/e115ce49e7a1ddf315cfef76e8a8d00c/truck-loader.png",
+    "category": "action"
+  },
+  {
+    "title": "2048",
+    "link": "https://www.friv.com/z/games/2048numbermatch/game.html",
+    "image": "https://play-lh.googleusercontent.com/74u5Dkdsk49JHtfw0mmDxA18JRVdN4nw1U4GOJhsGl1W9isqwyDQtfszmLxyj_jZBA",
+    "category": "desktop"
+  },
+  {
+    "title": "Block Tower",
+    "link": "https://www.friv.com/z/games/blocktower/game.html",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI8iasCclxAstaNGFY2Tzc_TFiZcFahzT7Q&s",
+    "category": "action"
+  }
+  ],
+  "marketplace": []
+}

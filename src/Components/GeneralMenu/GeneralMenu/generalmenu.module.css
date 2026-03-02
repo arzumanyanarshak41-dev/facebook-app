@@ -1,0 +1,185 @@
+
+.GeneralMenu {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    position: fixed;
+    right: 20px;
+    top: 60px;
+    padding: 0 6px 16px 16px;
+    background-color: #f8f9fb;
+    max-width: 650px;
+    max-height: 520px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.GeneralMenu h2 {
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+    background-color: #f8f9fb;
+    padding: 16px 0;
+    z-index: 10;
+}
+
+
+.GeneralMenu .MenuContent {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-y: auto; 
+}
+
+
+.MenuContent::-webkit-scrollbar-thumb {
+    background: #c7caca;
+    border-radius: 8px;     
+}
+
+
+.MenuContent::-webkit-scrollbar {
+    width: 8px;
+}
+
+.MenuContent::-webkit-scrollbar-track {
+    background: #00000000;
+    border-radius: 8px;
+}
+
+.GeneralMenu .MenuLeftBox {
+    flex: 2;
+    min-height: fit-content;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.GeneralMenu .MenuLeftBox .searchbox {
+    position: relative;
+    min-height: 36px;
+    width: 100%;
+    background-color: #F0F2F5;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.GeneralMenu .MenuLeftBox .searchbox input {
+    border: none;
+    padding: 7px 9px 6px 25px;
+    color: #606770;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.GeneralMenu .MenuLeftBox .searchbox svg {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.LeftBoxAllSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.GeneralMenu .LeftBoxSection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.GeneralMenu .LeftBoxSection h4 {
+    color: #080809;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.MenuLeftBoxRow {
+    border-radius: 10px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.MenuLeftBoxRow p {
+    font-size: 13px;
+}
+
+.MenuLeftBoxRow:hover {
+    background-color: #f4f4f4;
+}
+
+.GeneralMenu .MenuRightBox {
+    margin-right: 6px;
+    position: sticky;
+    top: -65px;
+    flex: 1;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.GeneralMenu .MenuRightBox hr {
+    margin-top: 6px;
+}
+
+.GeneralMenu .MenuRightBox h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.GeneralMenu .MenuRightBox .MenuRightBoxRow {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.GeneralMenu .MenuRightBox .MenuRightBoxRow .IconHolder {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e9e5;
+}
+
+.GeneralMenu .MenuRightBox .MenuRightBoxRow p {
+    font-weight: 600;
+}
+
+.GeneralMenu .MenuRightBox .MenuRightBoxRow:hover {
+    background-color: #f4f4f4;
+}
+
+
+@media (max-width: 700px) {
+    .GeneralMenu {
+        max-width: 450px;
+    }
+
+    .GeneralMenu .MenuContent {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

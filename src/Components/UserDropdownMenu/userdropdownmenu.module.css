@@ -1,0 +1,32 @@
+.UserDropdownMenu {
+    overflow: hidden;
+    position: fixed;
+    right: 15px;
+    top: 60px;
+    padding: 15px 8px;
+    border-radius: 15px;
+    max-width: 360px;
+    height: fit-content;
+    background-color: #fff;
+    display: flex;
+    gap: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.SecondaryPage{
+    min-width: 100%;
+    display: flex;
+    gap: 12px;
+    transition: 0.8s;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .UserDropdownMenu {
+        left: 20px;
+        right: 20px;
+        max-width: none;
+        width: auto;
+    }
+}

@@ -1,0 +1,1029 @@
+.container {
+  position: relative;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+  width: 100%;
+  padding: 5px 73px;
+  margin: 30px auto;
+
+  font-size: 20px;
+}
+
+.XIconHoler {
+  position: absolute;
+  right: 5%;
+  top: 30%;
+}
+
+.arrowIconHolder {
+  position: relative;
+  left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: #717b8518;
+  }
+}
+
+.metaIconHolder {
+  display: flex;
+  align-items: center;
+  gap: 0 3px;
+
+  p {
+    align-self: flex-start;
+    font-size: 18px;
+  }
+}
+
+.infoHolder {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.subButton,
+.beforeButton {
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  height: 45px;
+  border-radius: 40px;
+  background-color: #0064e0;
+  cursor: pointer;
+}
+
+.beforeButton {
+  background-color: #ffffff;
+  color: #000;
+  border: 0.5px solid #ccd3db;
+}
+
+.specInfo {
+  display: inline;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0064e0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.underTextNameHolder {
+  display: flex;
+
+  .underTextHolder {
+    display: none;
+    width: 50%;
+
+  }
+}
+
+.underTextHolder {
+  display: none;
+  padding: 5px 0;
+  /* display: flex; */
+  align-items: center;
+  gap: 0 5px;
+  transition: all 0.2s;
+}
+
+.underText {
+  /* display: none; */
+  color: #d31130;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+.infoTitle {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.infoText {
+  transition: all 0.2s;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.infoLabel {
+  font-size: 18px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.infoLabelStart {
+  font-size: 18px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.labelHolder {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.infoBtn {
+  border: none;
+  width: fit-content;
+  background: none;
+}
+
+.posInfo {
+  position: absolute;
+  z-index: 100;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  max-width: 420px;
+  width: 100%;
+  /* height: 100px; */
+  /* min-height: 20px ; */
+  /* padding: 10px; */
+  right: 25%;
+  top: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .infoText {
+    margin: 10px;
+    font-size: 15px;
+  }
+}
+
+/* .specInfo{
+
+} */
+
+.nameHolder {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 5px 20px;
+}
+
+.box {
+  position: relative;
+  border: 1.5px solid #ccd3db;
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px 10px;
+  max-width: 290px;
+  height: 60px;
+  overflow: hidden;
+  width: 100%;
+  /* line-height: 30px; */
+  padding: 20px 5px;
+  transition: all 0.3s;
+
+  .text {
+    position: absolute;
+    color: #606e7d;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+
+  &:hover {
+    border: 1.5px solid #606e7d;
+  }
+}
+
+.box2 {
+  position: relative;
+  border: 1.5px solid #006cd8;
+
+  border-radius: 15px;
+  width: fit-content;
+  padding: 5px;
+  overflow: hidden;
+
+  max-width: 290px;
+  height: 60px;
+  width: 100%;
+  /* line-height: 30px; */
+  padding: 20px 5px;
+}
+
+.text {
+  top: 20px;
+  font-size: 18px;
+  position: absolute;
+  color: #606e7d;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.active {
+  /* color: #006cd8; */
+  /* transform: translateY(-50%); */
+  top: 2px;
+  left: 10px;
+  font-size: 16px;
+}
+
+.signInp {
+  border: none;
+  outline: none;
+  height: 35px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.red {
+  position: relative;
+  border: 1.5px solid #d31130;
+  border-radius: 15px;
+  width: fit-content;
+  overflow: hidden;
+
+  padding: 5px;
+  max-width: 290px;
+  height: 60px;
+  width: 100%;
+  /* line-height: 30px; */
+  padding: 20px 5px;
+
+  .text {
+    position: absolute;
+    color: #d31130;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+}
+
+.tel-main-holder {
+  transition: all 0.2s;
+}
+
+.tel-label-text {
+  font-weight: bold;
+  /* pointer-events: none; */
+}
+
+.telInp {
+  position: absolute;
+  height: 30px;
+  width: 80%;
+  border: none;
+  outline: none;
+  bottom: 1px;
+  font-size: 17px;
+  background-color: transparent;
+  /* border: 1px solid black; */
+  /* z-index: -1; */
+}
+
+/* norm state */
+.telInpHolderNormSate {
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  /* min-width: 570px; */
+  height: 50px;
+  transition: all 0.5s;
+  border: 1.5px solid #ccd3db;
+  border-radius: 10px;
+  padding: 8px;
+  transition: all 0.3s;
+
+  .telPlaceholder {
+    color: #606e7d;
+    position: absolute;
+    font-size: 17px;
+    top: 13px;
+    left: 5px;
+    pointer-events: none;
+    z-index: 4;
+  }
+
+  &:hover {
+    border: 1.5px solid #606e7d;
+  }
+}
+
+/* onfocus */
+.telInpOnFocusChange {
+  position: relative;
+  border: 1.5px solid #006cd8;
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 8px;
+
+  .telPlaceholder {
+    color: #606e7d;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+
+    transform: scale(0.7) translateX(-20%);
+    pointer-events: none;
+    transition: all 0.1s;
+  }
+}
+
+.telInpOnBlur {
+  position: relative;
+  border: 1.5px solid #ccd3db;
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  height: 50px;
+  /* transition: all 0.5s; */
+  border-radius: 10px;
+  padding: 8px;
+  transition: all 0.2s;
+
+  .telPlaceholder {
+    color: #606e7d;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+
+    transform: scale(0.7) translateX(-20%);
+    pointer-events: none;
+    transition: all 0.1s;
+  }
+
+  &:hover {
+    border: 1.5px solid #606e7d;
+  }
+}
+
+.telInpOnBlurRed {
+  position: relative;
+  border: 1.5px solid #d31130;
+  position: relative;
+  max-width: 680px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 8px;
+
+  .telPlaceholder {
+    color: #d31130;
+    position: absolute;
+    top: 13px;
+    font-size: 17px;
+    z-index: 4;
+    left: 5px;
+    pointer-events: none;
+    transition: all 0.1s;
+  }
+}
+
+/* //////////////////////////////// */
+/* -----------select style--------------- */
+
+.date-select-holder {
+  display: flex;
+  gap: 0 5px;
+}
+
+.normStateDay {
+  position: relative;
+  width: 200px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1.5px solid #ccd3db;
+  padding: 5px 10px;
+
+  .day {
+    color: #606e7d;
+    position: absolute;
+    top: 13px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .gendSelDef {
+    color: #606e7d;
+    position: absolute;
+    top: 13px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .selDefText {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  /* .selDatDay{} */
+
+  .selOpt {
+    font-size: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #a0a0a0;
+    }
+  }
+
+  &:hover {
+    border: 1.5px solid #606e7d;
+  }
+}
+
+.onFocusYesDay {
+  position: relative;
+  width: 200px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1.5px solid #006cd8;
+  padding: 5px 10px;
+
+  .day {
+    color: #606e7d;
+    position: absolute;
+    top: 13px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .gendSelDef {
+    color: #606e7d;
+    position: absolute;
+    top: 13px;
+    pointer-events: none;
+    font-size: 16px;
+  }
+
+  .selDefText {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* .selDatDay{} */
+
+  .selOpt {
+    font-size: 20px;
+    background-color: #cccccc;
+    border-radius: 10px;
+    /* &:hover {
+      background-color: #a0a0a0;
+    } */
+  }
+}
+
+.normStateYesDay {
+  position: relative;
+  width: 200px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1.5px solid #ccd3db;
+  padding: 5px 10px;
+
+  .day {
+    color: #606e7d;
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: 5px;
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+
+  .gendSelDef {
+    color: #606e7d;
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: -5px;
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+
+  .selDefText {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+  }
+
+  /* .selDatDay{} */
+  &:hover {
+    border: 1.5px solid #606e7d;
+  }
+}
+
+.onNormYesDay {
+  position: relative;
+  width: 200px;
+  transition: all 0.5s;
+  border-radius: 10px;
+  border: 1.5px solid #006cd8;
+  padding: 5px 10px;
+
+  .day {
+    color: #006cd8;
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: 5px;
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+
+  .gendSelDef {
+    color: #006cd8;
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    left: -5px;
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+
+  .selDefText {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 45px;
+  }
+}
+
+.genderSection {
+  width: 100%;
+}
+
+/* -------------------*/
+@media (max-width: 700px) {
+  .signInp {
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 75%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .posInfo {
+    position: absolute;
+    z-index: 100;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 380px;
+    width: 100%;
+    /* height: 100px; */
+    /* min-height: 20px ; */
+    /* padding: 10px; */
+    right: 20%;
+    top: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .infoText {
+      margin: 10px;
+      font-size: 14px;
+
+      .specInfo {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .underTextHolder {
+    padding: 5px 0;
+    gap: 0 5px;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 13px;
+  }
+}
+
+@media (max-width:530px) {
+  .underTextHolder {
+    padding: 3px 0;
+    gap: 0 5px;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 455px) {
+
+  .box,
+  .box2,
+  .red {
+    .text {
+      font-size: 16px;
+    }
+
+    .active {
+      font-size: 12px;
+    }
+  }
+
+  .infoText,
+  .specInfo {
+    font-size: 13px;
+  }
+
+  .infoLabel,
+  .infoLabelStart {
+    font-size: 15px;
+  }
+
+  .infoTitle {
+    font-size: 20px;
+  }
+
+  .underTextHolder {
+    padding: 2px 0;
+    gap: 0 5px;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 431px) {
+
+  .normStateDay,
+  .onFocusYesDay,
+  .normStateYesDay,
+  .onNormYesDay {
+
+    .day,
+    .gendSelDef {
+      transition: all 0.2s;
+      font-size: 15px;
+      /* display: none; */
+    }
+  }
+
+  .subButton,
+  .beforeButton {
+    height: 35px;
+    font-size: 13px;
+  }
+
+  .XIconHoler {
+    top: 20%;
+  }
+
+  .telInpHolderNormSate,
+  .telInpOnBlurRed {
+    height: 40px;
+
+    .telPlaceholder {
+      top: 25%;
+      font-size: 15px;
+    }
+
+    .telInp {
+      top: 45%;
+      height: 15px;
+      font-size: 13px;
+    }
+  }
+
+  .telInpOnFocusChange,
+  .telInpOnBlur {
+    height: 40px;
+
+    .telPlaceholder {
+      top: 10%;
+      font-size: 10px;
+    }
+
+    .telInp {
+      top: 35%;
+      height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .underTextHolder {
+    align-items: center;
+    padding: 1px 0;
+    gap: 0 5px;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .normStateDay,
+  .onFocusYesDay,
+  .normStateYesDay,
+  .onNormYesDay {
+
+    .day,
+    .gendSelDef,
+    .selOpt {
+      transition: all 0.2s;
+      top: 35%;
+      font-size: 12px;
+      /* display: none; */
+    }
+
+    .selDefText {
+      height: 15px;
+      left: 0;
+      width: 100%;
+      font-size: 8px;
+    }
+  }
+
+  .box,
+  .box2,
+  .red {
+    height: 50px;
+
+    .text {
+      font-size: 12px;
+    }
+
+    .active {
+      font-size: 8px;
+    }
+  }
+
+  .normStateYesDay,
+  .onNormYesDay {
+
+    .day,
+    .gendSelDef,
+    .selOpt {
+      top: 7%;
+    }
+  }
+
+  .underTextHolder {
+    padding: 0;
+    margin-top: -5px;
+    align-self: flex-start;
+    gap: 0 4px;
+  }
+
+  i {
+    line-height: 45%;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 370px) {
+  .infoLabel {
+    align-items: flex-end;
+  }
+
+  .normStateDay,
+  .onFocusYesDay,
+  .normStateYesDay,
+  .onNormYesDay {
+    height: 40px;
+    transition: all 0.2s;
+
+    .day,
+    .gendSelDef,
+    .selOpt {
+      transition: all 0.2s;
+      top: 30%;
+      font-size: 8px;
+      /* display: none; */
+    }
+
+    .selDefText {
+      height: 80%;
+      font-size: 8px;
+      padding: 0;
+    }
+  }
+
+  .normStateYesDay,
+  .onNormYesDay {
+
+    .day,
+    .gendSelDef,
+    .selOpt {
+      top: 7%;
+      /* left: 2%; */
+    }
+  }
+
+  .box,
+  .box2,
+  .red {
+    height: 30px;
+
+    .text {
+      font-size: 10px;
+      top: 30%;
+    }
+
+    .active {
+      font-size: 8px;
+    }
+
+    .signInp {
+      top: 25%;
+      font-size: 9px;
+      height: 15px;
+    }
+  }
+
+  .telInpHolderNormSate,
+  .telInpOnBlur,
+  .telInpOnBlurRed {
+    height: 40px;
+
+    .telPlaceholder {
+      top: 25%;
+      font-size: 10px;
+    }
+
+    .telInp {
+      top: 45%;
+      height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .telInpOnFocusChange {
+    height: 40px;
+
+    .telPlaceholder {
+      font-size: 10px;
+    }
+
+    .telInp {
+      top: 45%;
+      height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .XIconHoler {
+    top: 15%;
+  }
+
+  .infoText,
+  .specInfo {
+    font-size: 10px;
+  }
+
+  .infoLabel,
+  .infoLabelStart {
+    font-size: 12px;
+  }
+
+  .infoTitle {
+    font-size: 15px;
+  }
+
+  .metaIconHolder {
+    align-items: center;
+
+    p {
+      align-self: center;
+      font-size: 10px;
+    }
+  }
+
+  .subButton,
+  .beforeButton {
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .arrowIconHolder {
+    left: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25px;
+    height: 25px;
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .telInpHolderNormSate,
+  .telInpOnBlur,
+  .telInpOnBlurRed {
+    .telInp {
+      top: 45%;
+      height: 15px;
+      font-size: 10px;
+    }
+  }
+
+  .telInpOnFocusChange {
+    .telInp {
+      top: 45%;
+      height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .underTextHolder {
+    gap: 0 1px;
+    align-items: center;
+
+    i {
+      line-height: 10%;
+    }
+  }
+
+  .underText {
+    color: #d31130;
+    font-size: 6px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}

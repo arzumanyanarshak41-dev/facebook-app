@@ -1,0 +1,78 @@
+.searchGeneral {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 300px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    z-index: 333;
+    animation-name: openSearch;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+}
+
+.top {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+
+    svg {
+        transform: translateY(20%);
+    }
+
+    input {
+        padding: 5px 10px;
+        background-color: #f1f2f5;
+        border: none;
+        border-radius: 13px;
+        flex-grow: 1;
+    }
+
+    input::placeholder {
+        color: gray;
+        font-size: 15px;
+    }
+
+    .searchResult {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .userBox {
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 3px;
+                border: none;
+            }
+
+            .namebox {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+        }
+    }
+}
+
+@keyframes openSearch {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 0px
+    }
+}

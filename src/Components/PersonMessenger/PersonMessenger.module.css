@@ -1,0 +1,170 @@
+.messenger {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    gap: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 333;
+    background-color: white;
+    animation-name: openMessenger;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 3px 15px -13px rgba(66, 68, 90, 1);
+        width: 100%;
+        padding: 6px 10px;
+        border-radius: 12px;
+
+        span {
+            transform: translateY(23%);
+            cursor: pointer;
+        }
+
+        .userinfo {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: none;
+            }
+
+            .persActive {
+                display: flex;
+                flex-direction: column;
+
+                h4 {
+                    font-weight: bold;
+                }
+
+                .online {
+                    color: rgb(144, 236, 5);
+                }
+
+                p {
+                    color: gray;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+
+                    .cirlc {
+                        width: 10px;
+                        height: 10px;
+                        border: none;
+                        border-radius: 50%;
+                        background-color: greenyellow;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .chats {
+        height: 45vh;
+        overflow-y: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px;
+        width: 100%;
+
+        .noMessages {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 20px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+
+        .messBoxme {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            h4 {
+                background-color: #7423fb;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 10px;
+                color: white;
+            }
+
+            p {
+                color: gray;
+                font-size: 10px;
+                text-align: end;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        .messBoxhim {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            h4 {
+                background-color: #f0f0f0;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 10px;
+                color: 080809;
+            }
+
+            p {
+                color: gray;
+                font-size: 10px;
+                text-align: start;
+            }
+
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+
+    form {
+        display: flex;
+        gap: 15px;
+        padding: 10px;
+        align-items: center;
+
+        input {
+            border: none;
+            border-radius: 12px;
+            flex-grow: 1;
+            padding: 5px 10px;
+            background-color: #f1f2f5;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            transform: translateY(-10%);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.xIcon ,.arrowIcon{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.ImportIcon{
+  height: 15px;
+  width: 15px;
+  margin: 1px 1px 1px 0px;
+}
+
+.metaIcon  {
+  width: 20px ;
+  height: 20px;
+  cursor: pointer;
+}
+.questionIcon{
+  width: 25px ;
+  height: 25px;
+  cursor: pointer;
+position: relative;
+top: 5px;
+  border-radius: 50%;
+  &:hover{
+    background-color: #606e7d51;
+  }
+}
+.eyeOffIcon,.eyeOnIcon{
+height: 20px;
+width: 20px;
+cursor: pointer;
+}
+@media (max-width:650px){
+.ImportIcon{
+  height: 13px;
+  width: 13px;
+}
+}
+@media (max-width:450px){
+  .xIcon{
+    height: 20px;
+    width: 20px;
+  }
+  .ImportIcon{
+  height: 11px;
+  width: 11px;
+}
+}
+
+@media (max-width:390px){
+  
+.eyeOffIcon,.eyeOnIcon{
+height: 15px;
+width: 15px;
+}
+.metaIcon  {
+  width: 10px ;
+  height: 10px;
+}
+.arrowIcon{
+  height: 20px;
+  width: 20px;
+}
+.questionIcon{
+  height: 15px;
+  width: 15px;
+  top: 3px;
+}
+  .ImportIcon{
+  height: 9px;
+  width: 9px;
+}
+}
+@media (max-width:340px){
+    .ImportIcon{
+  height: 6px;
+  width: 6px;
+}
+}
