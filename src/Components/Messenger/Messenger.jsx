@@ -1,18 +1,31 @@
 import styles from './Messenger.module.css'
 import { Icon } from '../../SVG/Icon'
 import { useDispatch, useSelector } from 'react-redux'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PersonMessenger } from '../PersonMessenger/PersonMessenger'
+import { useNavigate } from 'react-router-dom'
 export const Messenger = () => {
-    const [users, logedUser] = useSelector(state => [state.users, state.logedUser])
+    const users = useSelector(state => state.users)
+    const logedUser = useSelector(state => state.logedUser)
     const [person, setPerson] = useState({ id: null, choosed: false })
+    const navigate = useNavigate()
+    let id;
+    useEffect(() => {
+        if (!id && users.length > 0) {
+            const firstFriend = users.find(u => logedUser?.friends?.includes(u.id))
+            if (firstFriend) {
+                id = firstFriend.id
+                return
+            }
+        }
+    }, [id, users, logedUser])
     return person.choosed ? (
         <PersonMessenger id={person?.id} setPerson={setPerson} />
     ) : (
         <div className={styles.messenger}>
             <div className={styles.top}>
                 <h2>Chats</h2>
-                <Icon name={"Fullscreen"} size={"20px"} />
+                <span onClick={() => navigate(`/home/messenger/${id}`)}><Icon name={"Fullscreen"} size={"20px"} /></span>
             </div>
             <button className={styles.openSearch}>
                 <Icon name={"Search"} size={"20px"} />

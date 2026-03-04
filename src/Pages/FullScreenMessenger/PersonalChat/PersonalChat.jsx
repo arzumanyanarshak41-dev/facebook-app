@@ -1,24 +1,30 @@
-import { useEffect, useRef, useState } from 'react'
-import styles from './PersonMessenger.module.css'
-import axios from 'axios'
-import { Icon } from '../../SVG/Icon'
+import { useNavigate, useOutletContext, useParams } from 'react-router-dom'
+import styles from './PersonalChat.module.css'
 import { useDispatch, useSelector } from 'react-redux'
-import { logedUserSelect } from '../../Store/Slices/LogedUserSlice/LogedUserSlice'
-import { changeLogedUser } from '../../Store/Slices/LogedUserSlice/ChangeLogedUser'
-import { openMess } from '../../Store/Slices/messengerOpenSlicer/messengerOpenSlicer'
-import likeIcon from '../../Asets/blue-like-button-icon.webp'
-import messegSendAudio from '../../Asets/messageSendAudio.mp3'
-export const PersonMessenger = ({ id, setPerson }) => {
+import { useEffect, useRef, useState } from 'react'
+import messegSendAudio from '../../../Asets/messageSendAudio.mp3'
+import { logedUserSelect } from '../../../Store/Slices/LogedUserSlice/LogedUserSlice'
+import axios from 'axios'
+import { selectUsers } from '../../../Store/Slices/UserSlice/UserSlice'
+import { changeLogedUser } from '../../../Store/Slices/LogedUserSlice/ChangeLogedUser'
+import likeIcon from '../../../Asets/blue-like-button-icon.webp'
+import { Icon } from '../../../SVG/Icon'
+export const PersonalChat = () => {
     const logedUser = useSelector(logedUserSelect)
+    const users = useSelector(selectUsers)
     const [personUser, setPersonUser] = useState(null)
     const [loading, setLoading] = useState(true)
     const ChatsRef = useRef(null)
     const audioPlay = useRef(null)
+    const { id } = useParams()
+    const { setMobileOpen } = useOutletContext()
+    const navigate = useNavigate()
     const dispatch = useDispatch()
-
+    
     const api = axios.create({ baseURL: "http://localhost:3010/users/" })
 
     useEffect(() => {
+        if(!id) return
         const fetchPerson = async () => {
             try {
                 setLoading(true)
@@ -54,10 +60,9 @@ export const PersonMessenger = ({ id, setPerson }) => {
         }
     }, [friendMessages])
     if (!personUser) return <p>User not found</p>
-
     return (
         !loading ? (
-            <div className={styles.messenger}>
+            <div className={styles.personalChat}>
                 <audio src={messegSendAudio} ref={audioPlay}></audio>
                 <div className={styles.top}>
                     <div className={styles.userinfo}>
@@ -73,21 +78,16 @@ export const PersonMessenger = ({ id, setPerson }) => {
                             )}
                         </div>
                     </div>
-                    <span onClick={() => {
-                        setPerson({ id: null, choosed: false })
-                        dispatch(openMess())
-                    }}>
-                        <Icon name={"xIcon"} size={"30px"} coloricon="#d073ff" />
-                    </span>
+                    <span onClick={() => setMobileOpen(true)}><Icon name={"LeftArrow"} size={"30px"} /></span>
                 </div>
 
                 <div className={styles.chats}>
                     <div className={styles.chats} ref={ChatsRef}>
                         {friendMessages.length > 0 ? (
                             friendMessages.map((m, i) => (
-                                <div key={i} className={m.sender === "him" ? styles.messBoxhim : styles.messBoxme}>
+                                <div key={i} className={`${m.sender === "him" ? styles.messBoxhim : styles.messBoxme} ${m.text === "like" ? styles.like : ''}`}>
                                     {m.text === "like" ? <img src={likeIcon} alt="" /> : <h4>{m.text}</h4>}
-                                    <p>{m.time}</p>
+                                    {m.text !== "like" && <p>{m.time}</p>}
                                 </div>
                             ))
                         ) : (
