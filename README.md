@@ -18,9 +18,10 @@ This application simulates the main Facebook interface structure, including:
 - Main publications (posts feed)
 - Right sidebar
 - Messenger system
+- Mini Messenger and Fullscreen Messenger
 - Like / Comment / Send interactions
-- Marketplace (currently in progress )
-- Reels (in progress )
+- Marketplace (currently in progress)
+- Reels (in progress)
 
 The goal of this project is to practice building a large structured frontend application using reusable components, state management, and responsive design.
 
@@ -57,9 +58,9 @@ The goal of this project is to practice building a large structured frontend app
 ### Navigation Menu
 
 - Search people
-- Reels (On Process )
+- Reels (in progress)
 - Friends
-- Marketplace (In Development )
+- Marketplace (in development)
 - Games
 - Messenger
 
@@ -70,9 +71,23 @@ The goal of this project is to practice building a large structured frontend app
 
 ### Messenger
 
-- Chat UI
-- Message sending
-- State-based message rendering
+- Mini Messenger (sidebar version)
+  - Compact chat in sidebar
+  - Shows recent contacts and messages
+  - State-based rendering
+  - LocalStorage persists chat history
+
+- Fullscreen Messenger
+  - Expands messenger to full-screen view
+  - Easier to read and send messages
+  - Audio notification for sent messages
+  - Auto-scrolls to latest message
+  - State-based rendering with LocalStorage persistence
+
+- Usage:
+  - Click Messenger icon to open Mini Messenger
+  - Click expand button to open Fullscreen Messenger
+  - Type and send messages, instantly updated and saved locally
 
 ### Data Persistence
 
@@ -101,7 +116,11 @@ The goal of this project is to practice building a large structured frontend app
 
 ### Messenger
 
-![Messenger](./src/Asets/miniMessengerScreen.png)
+![Mini Messenger](./src/Asets/miniMessengerScreen.png)
+
+### FullScreen Messenger
+
+![FullScreen Messenger](./src/Asets/FullScreenMessengerScreen.jpg)
 
 ### Games Page
 

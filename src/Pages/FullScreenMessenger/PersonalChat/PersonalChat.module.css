@@ -103,8 +103,8 @@
 
 .messBoxme img,
 .messBoxhim img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .messBoxme h4,
@@ -153,6 +153,17 @@ form img {
     width: 36px;
     height: 36px;
     cursor: pointer;
+}
+
+.like {
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+.like img {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 768px) {
