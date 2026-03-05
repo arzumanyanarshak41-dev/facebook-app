@@ -10,7 +10,8 @@ export const FullScreenMessenger = () => {
     const [mobileOpen, setMobileOpen] = useState(false)
     return (
         <div className={styles.fullScreenMessenger}>
-<div className={mobileOpen ? `${styles.showFriends} ${styles.active}` : styles.showFriends}>                <div className={styles.top}>
+            <div className={mobileOpen ? `${styles.showFriends} ${styles.active}` : styles.showFriends}>
+                <div className={styles.top}>
                     <h2>Chats</h2>
                     <Icon name={"Fullscreen"} size={"20px"} />
                 </div>

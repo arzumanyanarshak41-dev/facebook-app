@@ -7,6 +7,8 @@ import { GamesPage } from "../Pages/GamesPage/GamesPage"
 import { FriendsNav } from "../Pages/FriendsNav/FriendsNav"
 import { FullScreenMessenger } from "../Pages/FullScreenMessenger/FullScreenMessenger"
 import { PersonalChat } from "../Pages/FullScreenMessenger/PersonalChat/PersonalChat"
+import { Marketplace } from "../Pages/Marketplace/Marketplace"
+import { Products } from "../Pages/Marketplace/Products/Products"
 export const AppRoutes = () => {
     return (
         <Routes>
@@ -15,6 +17,9 @@ export const AppRoutes = () => {
             <Route path="/home" element={<Layout />}>
                 <Route index element={<General />} />
                 <Route path="games" element={<GamesPage />} />
+                <Route path="marketplace" element={<Marketplace />} >
+                    <Route index element={<Products />} />
+                </Route>
                 <Route path="friends" element={<FriendsNav />} />
                 <Route path="messenger" element={<FullScreenMessenger />} >
                     <Route path=":id" element={<PersonalChat />} />

@@ -1019,5 +1019,21 @@
       "id": "6f68"
     }
   ],
-  "marketplace": []
+  "marketplace": [
+    {
+      "id": "1",
+      "userId": "9000000000002",
+      "title": "Mercedes Benz E class",
+      "price": 2200,
+      "time": "2026-02-28T13:14:45.730Z",
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Davtashen"
+      },
+      "phone": "+37477200001",
+      "type": "vehicles",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI8iasCclxAstaNGFY2Tzc_TFiZcFahzT7Q&s"
+    }
+  ]
 }
