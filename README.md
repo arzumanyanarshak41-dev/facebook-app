@@ -1,5 +1,7 @@
 # Facebook UI Clone
 
+⚠️ This project is currently in development.
+Some features may not work yet.
 A modern Facebook-style social media frontend application built with React.js.
 
 This project is a portfolio application that recreates the core layout and functionality of Facebook, including publications, navigation, authentication system, messenger, sidebars, and interactive UI components.
