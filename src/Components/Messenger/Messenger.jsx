@@ -37,7 +37,10 @@ export const Messenger = () => {
             </div>
             <div className={styles.chats}>
                 {users
-                    .filter(el => logedUser?.friends?.includes(el.id))
+                    .filter(u =>
+                        logedUser?.friends?.includes(u.id) ||
+                        logedUser?.messages?.some(m => m.friendId === u.id)
+                    )
                     .map(user => (
                         <div className={styles.personMessenger} key={user.id} onClick={() => setPerson({ id: user.id, choosed: true })}>
                             <img src={user.profile_image} alt="" />

@@ -11,9 +11,13 @@ import realEstateyIcon from '../../Asets/EstateMarket.png'
 import sportIcon from '../../Asets/SportMarket.png'
 import animalsIcon from '../../Asets/AnimalsMarket.png'
 import electroIcon from '../../Asets/electronicMarket.png'
+import { useNavigate } from 'react-router-dom'
+import { CreateNewAd } from '../../Components/CreateNewAd/CreateNewAd'
 export const Marketplace = () => {
     const [products, setProducts] = useState([])
     const [selectedCategory, setSelectedCategory] = useState("all")
+    const [createNewOpen, setcreateNewOpen] = useState(false)
+    const navigate = useNavigate()
     useEffect(() => {
         const MarketFetch = async () => {
             const result = axios.get("http://localhost:3010/marketplace")
@@ -27,13 +31,14 @@ export const Marketplace = () => {
             : products.filter(el => el.type === selectedCategory)
     return (
         <div className={styles.marketplace}>
-            <div className={styles.leftside}>
+            {createNewOpen && <CreateNewAd setcreateNewOpen={setcreateNewOpen} products={products} setProducts={setProducts} />}
+            <div className={!createNewOpen ? styles.leftside : `${styles.leftside} ${styles.bluring}`}>
                 <h1 className='h1'>Marketplace</h1>
                 <div className={styles.searchBox}>
-                    <span><Icon name="Search" size={"20px"}/></span>
+                    <span><Icon name="Search" size={"20px"} /></span>
                     <input type="text" placeholder='Search in Market' />
                 </div>
-                <button className={styles.addToMarket}>Create a New Ad +</button>
+                <button className={styles.addToMarket} onClick={() => setcreateNewOpen(!createNewOpen)}>Create a New Ad +</button>
                 <h3 className={styles.categorys}>Categorys</h3>
                 <div className={styles.all} onClick={() => setSelectedCategory("all")}>
                     <img src={allPNG} alt="" />
@@ -72,10 +77,15 @@ export const Marketplace = () => {
                     <p>Electronic</p>
                 </div>
             </div>
-            <div className={styles.products}>
-                {filteredProducts.map(el => {
+            <div className={!createNewOpen ? styles.products : `${styles.products} ${styles.bluring}`}>
+                {filteredProducts.reverse().map(el => {
                     return (
-                        <div className={styles.box}></div>
+                        <div className={styles.productBox} key={el.id} onClick={() => { navigate(`${el.id}`) }}>
+                            <img src={el.image} alt="" />
+                            <h3>{el.price} USD</h3>
+                            <p>{el.title}</p>
+                            <p>{el.address?.city}</p>
+                        </div>
                     )
                 })}
             </div>

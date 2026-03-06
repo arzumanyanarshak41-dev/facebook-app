@@ -25,8 +25,10 @@ export const FullScreenMessenger = () => {
                 </div>
                 <div className={styles.chats}>
                     {users
-                        .filter(el => logedUser?.friends?.includes(el.id))
-                        .map(user => (
+                        .filter(u =>
+                            logedUser?.friends?.includes(u.id) ||
+                            logedUser?.messages?.some(m => m.friendId === u.id)
+                        ).map(user => (
                             <div className={styles.personMessenger} key={user.id} onClick={() => {
                                 navigate(`/home/messenger/${user.id}`)
                                 setMobileOpen(false)

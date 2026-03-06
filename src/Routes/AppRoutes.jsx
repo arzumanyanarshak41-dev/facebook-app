@@ -17,9 +17,8 @@ export const AppRoutes = () => {
             <Route path="/home" element={<Layout />}>
                 <Route index element={<General />} />
                 <Route path="games" element={<GamesPage />} />
-                <Route path="marketplace" element={<Marketplace />} >
-                    <Route index element={<Products />} />
-                </Route>
+                <Route path="marketplace" element={<Marketplace />} />
+                <Route path="marketplace/:id" element={<Products />} />
                 <Route path="friends" element={<FriendsNav />} />
                 <Route path="messenger" element={<FullScreenMessenger />} >
                     <Route path=":id" element={<PersonalChat />} />

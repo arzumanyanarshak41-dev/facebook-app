@@ -55,93 +55,7 @@
       "messages": [
         {
           "friendId": "9000000000002",
-          "message": [
-            {
-              "sender": "me",
-              "text": "Hello Bob!",
-              "time": "09:00 PM"
-            },
-            {
-              "sender": "him",
-              "text": "Hi Alice!",
-              "time": "09:05 PM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "05:29 PM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "07:28 AM"
-            }
-          ]
+          "message": []
         },
         {
           "friendId": "9000000000003",
@@ -180,31 +94,6 @@
               "sender": "me",
               "text": "like",
               "time": "03:03 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "02:48 PM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "06:40 AM"
-            },
-            {
-              "sender": "him",
-              "text": "Hi",
-              "time": "09:38 AM"
-            },
-            {
-              "sender": "him",
-              "text": "Im late",
-              "time": "09:38 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "09:38 AM"
             }
           ]
         },
@@ -215,61 +104,6 @@
               "sender": "him",
               "text": "Inch ka",
               "time": "10:10 PM"
-            },
-            {
-              "sender": "me",
-              "text": "Ban che Bob jan du asa",
-              "time": "11:03 PM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "04:10 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "05:29 PM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
             },
             {
               "sender": "me",
@@ -310,106 +144,6 @@
               "sender": "him",
               "text": "Inch ka?",
               "time": "10:11 PM"
-            },
-            {
-              "sender": "me",
-              "text": "Ban che Bob jan du asa",
-              "time": "11:03 PM"
-            },
-            {
-              "sender": "me",
-              "text": "Du vonc es?",
-              "time": "11:16 PM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "01:38 AM"
-            },
-            {
-              "sender": "me",
-              "text": "dwqjkewhj",
-              "time": "01:42 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "01:42 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "05:29 PM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "07:28 AM"
             }
           ]
         }
@@ -456,6 +190,11 @@
               "sender": "9000000000001",
               "text": "Wonderfull",
               "time": "2026-02-28T13:17:25.157Z"
+            },
+            {
+              "sender": "9000000000003",
+              "text": "wondefull",
+              "time": "2026-03-06T18:31:45.859Z"
             }
           ]
         }
@@ -492,56 +231,6 @@
               "sender": "him",
               "text": "a",
               "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "07:28 AM"
             }
           ]
         },
@@ -562,6 +251,11 @@
               "sender": "me",
               "text": "hii",
               "time": "10:54 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Im text you about Iphon",
+              "time": "10:32 PM"
             }
           ]
         }
@@ -621,41 +315,6 @@
           "friendId": "9000000000001",
           "message": [
             {
-              "sender": "me",
-              "text": "Hi Alice!",
-              "time": "10:05 PM"
-            },
-            {
-              "sender": "him",
-              "text": "Hey Charlie!",
-              "time": "10:10 PM"
-            },
-            {
-              "sender": "him",
-              "text": "Fine Thanks",
-              "time": "11:04 PM"
-            },
-            {
-              "sender": "him",
-              "text": "Hi",
-              "time": "02:56 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "02:57 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "02:57 AM"
-            },
-            {
-              "sender": "him",
-              "text": "hi",
-              "time": "02:57 AM"
-            },
-            {
               "sender": "him",
               "text": "hi",
               "time": "02:58 AM"
@@ -679,21 +338,6 @@
               "sender": "him",
               "text": "like",
               "time": "06:40 AM"
-            },
-            {
-              "sender": "me",
-              "text": "Hi",
-              "time": "09:38 AM"
-            },
-            {
-              "sender": "me",
-              "text": "Im late",
-              "time": "09:38 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "09:38 AM"
             }
           ]
         },
@@ -714,6 +358,21 @@
               "sender": "him",
               "text": "How Are you?",
               "time": "10:21 PM"
+            },
+            {
+              "sender": "me",
+              "text": "Hi Im text you about Iphon",
+              "time": "10:32 PM"
+            }
+          ]
+        },
+        {
+          "friendId": "9000000000004",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Im text you about chlote",
+              "time": "10:22 PM"
             }
           ]
         }
@@ -786,6 +445,11 @@
               "sender": "him",
               "text": "Hi Diana!",
               "time": "12:05 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Im text you about chlote",
+              "time": "10:22 PM"
             }
           ]
         },
@@ -1022,18 +686,292 @@
   "marketplace": [
     {
       "id": "1",
-      "userId": "9000000000002",
-      "title": "Mercedes Benz E class",
+      "userId": "9000000000001",
+      "title": "Mercedes Benz E Class",
       "price": 2200,
       "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good condition car. Options: 2008 model, black color, automatic transmission, leather seats.",
+      "notifications": [],
       "address": {
         "country": "Armenia",
         "city": "Yerevan",
         "street": "Davtashen"
       },
-      "phone": "+37477200001",
+      "phone": "+37477000001",
       "type": "vehicles",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI8iasCclxAstaNGFY2Tzc_TFiZcFahzT7Q&s"
+      "image": "https://img.mercedes-benz-kiev.com/data/lineup/mercedes-benz-e-class-w214/mercedes-benz-e-class-w214-22.jpg"
+    },
+    {
+      "id": "2",
+      "userId": "9000000000002",
+      "title": "BMW E60",
+      "price": 3400,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Clean BMW. Options: 2007 model, white color, sunroof, alloy wheels.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000002",
+      "type": "vehicles",
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e"
+    },
+    {
+      "id": "3",
+      "userId": "9000000000003",
+      "title": "Audi A6",
+      "price": 4100,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "No problems. Options: 2009 model, silver, automatic, GPS included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Gyumri",
+        "street": "Center"
+      },
+      "phone": "+37477000003",
+      "type": "vehicles",
+      "image": "https://images.unsplash.com/photo-1542362567-b07e54358753"
+    },
+    {
+      "id": "4",
+      "userId": "9000000000004",
+      "title": "Nike Jacket",
+      "price": 40,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Winter jacket. Options: size L, blue color, waterproof material, hood included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Ajapnyak"
+      },
+      "phone": "+37477000004",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1520975954732-35dd22299614"
+    },
+    {
+      "id": "5",
+      "userId": "9000000000005",
+      "title": "Adidas Hoodie",
+      "price": 30,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Almost new. Options: size M, black color, zipper hoodie, cotton material.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000005",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+    },
+    {
+      "id": "6",
+      "userId": "9000000000001",
+      "title": "Levis Jeans",
+      "price": 25,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Original. Options: size 32, blue denim, slim fit, button closure.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Malatia"
+      },
+      "phone": "+37477000006",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+    },
+    {
+      "id": "7",
+      "userId": "9000000000002",
+      "title": "Baby Stroller",
+      "price": 120,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good stroller. Options: foldable, red color, 3 wheels, adjustable handle.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Avan"
+      },
+      "phone": "+37477000007",
+      "type": "children",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+    },
+    {
+      "id": "8",
+      "userId": "9000000000003",
+      "title": "Baby Bed",
+      "price": 90,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Wood baby bed. Options: white color, 120x60cm, mattress included, safety rails.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Nor Nork"
+      },
+      "phone": "+37477000008",
+      "type": "children",
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    },
+    {
+      "id": "9",
+      "userId": "9000000000004",
+      "title": "Lego Set",
+      "price": 20,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Large lego box. Options: 500 pieces, colorful, age 6+, compatible with other sets.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Erebuni"
+      },
+      "phone": "+37477000009",
+      "type": "toy",
+      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b"
+    },
+    {
+      "id": "10",
+      "userId": "9000000000005",
+      "title": "Toy Car",
+      "price": 10,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Kids toy car. Options: red color, metal body, opening doors, battery included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000010",
+      "type": "toy",
+      "image": "https://jokomisiada.pl/hpeciai/ff4843177252fad6f9a84c7501dfdbdf/eng_pl_Beetle-car-metal-toy-car-opening-doors-light-sound-ZA4991-20552_3.jpg"
+    },
+    {
+      "id": "11",
+      "userId": "9000000000001",
+      "title": "2 Room Apartment",
+      "price": 55000,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Apartment in center. Options: 2 bedrooms, 1 bathroom, fully furnished, parking available.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Kentron"
+      },
+      "phone": "+37477000011",
+      "type": "realEstatey",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+    },
+    {
+      "id": "12",
+      "userId": "9000000000002",
+      "title": "House in Abovyan",
+      "price": 70000,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Big house. Options: 4 bedrooms, 2 bathrooms, garden, garage included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Abovyan",
+        "street": "Center"
+      },
+      "phone": "+37477000012",
+      "type": "realEstatey",
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+    },
+    {
+      "id": "13",
+      "userId": "9000000000003",
+      "title": "Football Ball",
+      "price": 15,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Adidas ball. Options: size 5, white color, durable material, official match ball.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Kapan",
+        "street": "Center"
+      },
+      "phone": "+37477000013",
+      "type": "sport",
+      "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b"
+    },
+    {
+      "id": "14",
+      "userId": "9000000000004",
+      "title": "Gym Dumbbells",
+      "price": 60,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "20kg dumbbells. Options: iron material, pair included, anti-slip grip, home use.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000014",
+      "type": "sport",
+      "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+    },
+    {
+      "id": "16",
+      "userId": "9000000000001",
+      "title": "British Cat",
+      "price": 150,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Cute cat. Options: vaccinated, female, grey color, 1 year old.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Avan"
+      },
+      "phone": "+37477000016",
+      "type": "animals",
+      "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131"
+    },
+    {
+      "id": "17",
+      "userId": "9000000000002",
+      "title": "iPhone 12",
+      "price": 420,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good condition. Options: 64GB, black color, original charger, no scratches.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000017",
+      "type": "electronic",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": "18",
+      "userId": "9000000000003",
+      "title": "MacBook Air",
+      "price": 650,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Laptop 2020. Options: 13-inch, 256GB SSD, 8GB RAM, silver color, battery good.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000018",
+      "type": "electronic",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
     }
   ]
 }
