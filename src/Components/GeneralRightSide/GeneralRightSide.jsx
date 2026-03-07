@@ -33,12 +33,12 @@ export const GeneralRightSide = () => {
         },
         {
             title: "Messneger",
-            link: "/messenger",
+            link: "/home/messenger",
             image: messengerPNG
         },
         {
             title: "Marketplace",
-            link: "/marketplace",
+            link: "/home/marketplace",
             image: marketplacePNG
         },
         {
