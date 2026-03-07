@@ -6,7 +6,13 @@ export const logedUserSlice = createSlice({
     name: "logedUser",
     initialState: {},
     reducers: {
-
+        setSeen(state, { payload }) {
+            state.messages = state.messages.map(m =>
+                m.friendId === payload
+                    ? { ...m, seen: false }
+                    : m
+            )
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(logedUserAPI.fulfilled, (state, action) => {
@@ -23,4 +29,4 @@ export const logedUserSlice = createSlice({
 
 export const logedUserSelect = state => state.logedUser
 export const logedUserReducer = logedUserSlice.reducer
-// export const { } = logedUserSlice.actions
+export const { setSeen } = logedUserSlice.actions

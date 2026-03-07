@@ -4,10 +4,12 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { PersonMessenger } from '../PersonMessenger/PersonMessenger'
 import { useNavigate } from 'react-router-dom'
+import { setSeen } from '../../Store/Slices/LogedUserSlice/LogedUserSlice'
 export const Messenger = () => {
     const users = useSelector(state => state.users)
     const logedUser = useSelector(state => state.logedUser)
     const [person, setPerson] = useState({ id: null, choosed: false })
+    const dispatch = useDispatch()
     const navigate = useNavigate()
     let id;
     useEffect(() => {
@@ -19,6 +21,25 @@ export const Messenger = () => {
             }
         }
     }, [id, users, logedUser])
+    async function isSeen(friendId) {
+
+        const updatedMessages = logedUser.messages.map(m =>
+            m.friendId === friendId
+                ? { ...m, seen: false }
+                : m
+        )
+
+        await fetch(`http://localhost:3010/users/${logedUser.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                messages: updatedMessages
+            })
+        })
+        dispatch(setSeen(friendId))
+    }
     return person.choosed ? (
         <PersonMessenger id={person?.id} setPerson={setPerson} />
     ) : (
@@ -42,16 +63,25 @@ export const Messenger = () => {
                         logedUser?.messages?.some(m => m.friendId === u.id)
                     )
                     .map(user => (
-                        <div className={styles.personMessenger} key={user.id} onClick={() => setPerson({ id: user.id, choosed: true })}>
+                        <div className={styles.personMessenger} key={user.id} onClick={() => {
+                            setPerson({ id: user.id, choosed: true })
+                            isSeen(user.id)
+                        }}>
                             <img src={user.profile_image} alt="" />
                             <div className={styles.personInfo}>
                                 <h4>{user.fname} {user.lname}</h4>
-                                <p>message... <span>{user.lastSeen}</span></p>
+                                {
+                                    logedUser?.messages?.some(
+                                        el => el.friendId === user.id && el.seen === false
+                                    ) ?
+                                        < p > message... <span>{user.lastSeen}</span></p> :
+                                        < h4 className={styles.h4}> <p>message...</p> <span className={styles.circle}></span><span>{user.lastSeen}</span></h4>
+                                }
                             </div>
                         </div>
                     ))
                 }
             </div>
-        </div>
+        </div >
     )
 }

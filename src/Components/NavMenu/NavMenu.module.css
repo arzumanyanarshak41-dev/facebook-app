@@ -52,6 +52,7 @@
             width: 40px;
             height: 40px;
             cursor: pointer;
+            position: relative;
         }
 
         img {
@@ -118,7 +119,16 @@
         cursor: pointer;
     }
 }
-
+.circle{
+    background-color: blue;
+    height: 10px;
+    width: 10px;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
 @media (max-width: 1045px) {
     .navmenu nav{
         padding: 15px;

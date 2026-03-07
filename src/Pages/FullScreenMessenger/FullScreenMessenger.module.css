@@ -108,6 +108,33 @@
     color: #606770;
 }
 
+.h4 {
+    color: black;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        color: black;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        border: none;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
 .personInfo span {
     font-size: 11px;
     color: #42b72a;

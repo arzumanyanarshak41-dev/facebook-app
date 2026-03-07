@@ -16,6 +16,7 @@
     animation-timing-function: ease-in;
     animation-duration: 0.2s;
     animation-iteration-count: 1;
+    z-index: 9999999;
 
     .top {
         display: flex;
@@ -87,8 +88,35 @@
                     font-size: 15px;
                     display: flex;
                     justify-content: space-between;
-                    span{
+
+                    span {
                         font-size: 10px;
+                    }
+                }
+
+                .h4 {
+                    color: black;
+                    width: 100%;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        color: black;
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+
+                    .circle {
+                        width: 10px;
+                        height: 10px;
+                        border: none;
+                        margin: 5px;
+                        border-radius: 50%;
+                        background-color: blue;
                     }
                 }
             }
@@ -99,6 +127,8 @@
         }
     }
 }
+
+
 
 @keyframes openMessenger {
     from {

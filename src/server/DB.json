@@ -55,7 +55,19 @@
       "messages": [
         {
           "friendId": "9000000000002",
-          "message": []
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi bob",
+              "time": "04:34 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Alice",
+              "time": "04:35 PM"
+            }
+          ],
+          "seen": false
         },
         {
           "friendId": "9000000000003",
@@ -64,88 +76,9 @@
               "sender": "me",
               "text": "Hi",
               "time": "02:56 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "02:57 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "02:57 AM"
-            },
-            {
-              "sender": "me",
-              "text": "hi",
-              "time": "02:57 AM"
-            },
-            {
-              "sender": "me",
-              "text": "hi",
-              "time": "02:58 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "02:59 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "03:03 AM"
             }
-          ]
-        },
-        {
-          "friendId": "9000000000002",
-          "message": [
-            {
-              "sender": "him",
-              "text": "Inch ka",
-              "time": "10:10 PM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "07:28 AM"
-            }
-          ]
-        },
-        {
-          "friendId": "9000000000002",
-          "message": [
-            {
-              "sender": "him",
-              "text": "Inch ka?",
-              "time": "10:11 PM"
-            }
-          ]
+          ],
+          "seen": false
         }
       ],
       "friends": [
@@ -190,11 +123,6 @@
               "sender": "9000000000001",
               "text": "Wonderfull",
               "time": "2026-02-28T13:17:25.157Z"
-            },
-            {
-              "sender": "9000000000003",
-              "text": "wondefull",
-              "time": "2026-03-06T18:31:45.859Z"
             }
           ]
         }
@@ -216,23 +144,9 @@
               "sender": "him",
               "text": "a",
               "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
-            },
-            {
-              "sender": "him",
-              "text": "a",
-              "time": "06:45 AM"
             }
-          ]
+          ],
+          "seen": false
         },
         {
           "friendId": "9000000000003",
@@ -257,7 +171,8 @@
               "text": "Hi Im text you about Iphon",
               "time": "10:32 PM"
             }
-          ]
+          ],
+          "seen": false
         }
       ],
       "friends": [
@@ -323,23 +238,9 @@
               "sender": "him",
               "text": "like",
               "time": "02:59 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "03:03 AM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "02:48 PM"
-            },
-            {
-              "sender": "him",
-              "text": "like",
-              "time": "06:40 AM"
             }
-          ]
+          ],
+          "seen": true
         },
         {
           "friendId": "9000000000002",
@@ -364,7 +265,8 @@
               "text": "Hi Im text you about Iphon",
               "time": "10:32 PM"
             }
-          ]
+          ],
+          "seen": false
         },
         {
           "friendId": "9000000000004",
@@ -374,7 +276,8 @@
               "text": "Hi Im text you about chlote",
               "time": "10:22 PM"
             }
-          ]
+          ],
+          "seen": false
         }
       ],
       "friends": [
@@ -451,7 +354,8 @@
               "text": "Hi Im text you about chlote",
               "time": "10:22 PM"
             }
-          ]
+          ],
+          "seen": true
         },
         {
           "friendId": "9000000000005",
@@ -466,7 +370,8 @@
               "text": "Sure Diana!",
               "time": "01:05 PM"
             }
-          ]
+          ],
+          "seen": true
         }
       ],
       "friends": [
@@ -528,7 +433,8 @@
               "text": "Hi Ethan!",
               "time": "02:05 PM"
             }
-          ]
+          ],
+          "seen": true
         },
         {
           "friendId": "9000000000004",
@@ -543,7 +449,8 @@
               "text": "Hey Ethan!",
               "time": "01:10 PM"
             }
-          ]
+          ],
+          "seen": true
         }
       ],
       "friends": [

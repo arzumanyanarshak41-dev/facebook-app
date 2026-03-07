@@ -24,14 +24,15 @@ export const changeLogedUser = createAsyncThunk(
         });
 
         const receiver = (await axios.get(`http://localhost:3010/users/${receiverId}`)).data;
-        let receiverMessages = receiver.messages.find(m => m.friendId === senderId);
-        if (receiverMessages) {
+        const receiverMessagesArray = receiver.messages || [];
+        let receiverMessages = receiverMessagesArray.find(m => m.friendId === senderId); if (receiverMessages) {
             receiverMessages.message.push({ sender: "him", text, time });
+            receiverMessages.seen = true;
         } else {
-            receiver.messages.push({ friendId: senderId, message: [{ sender: "him", text, time }] });
+            receiverMessagesArray.push({ friendId: senderId, message: [{ sender: "him", text, time }], seen: true });
         }
         await axios.patch(`http://localhost:3010/users/${receiverId}`, {
-            messages: receiver.messages
+            messages: receiverMessagesArray
         });
 
         return updatedMessages;
