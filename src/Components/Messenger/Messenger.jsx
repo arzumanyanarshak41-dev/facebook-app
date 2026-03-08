@@ -62,6 +62,13 @@ export const Messenger = () => {
                         logedUser?.friends?.includes(u.id) ||
                         logedUser?.messages?.some(m => m.friendId === u.id)
                     )
+                    .sort((a, b) => {
+                        const aMsg = logedUser?.messages?.find(m => m.friendId === a.id)?.message || [];
+                        const bMsg = logedUser?.messages?.find(m => m.friendId === b.id)?.message || [];
+                        const aLast = aMsg.length ? new Date(aMsg[aMsg.length - 1].time) : 0;
+                        const bLast = bMsg.length ? new Date(bMsg[bMsg.length - 1].time) : 0;
+                        return bLast - aLast;
+                    })
                     .map(user => (
                         <div className={styles.personMessenger} key={user.id} onClick={() => {
                             setPerson({ id: user.id, choosed: true })

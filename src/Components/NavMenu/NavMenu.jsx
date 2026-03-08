@@ -63,7 +63,7 @@ export const NavMenu = () => {
                             />
                         )}
                     </NavLink>
-                    <NavLink to={'/home/friends'} title='friends'>
+                    <NavLink to={'/home/friends'} title='Add Friends'>
                         {({ isActive }) => (
                             <Icon
                                 name={"NavFriends"}

@@ -1,0 +1,148 @@
+.backgroundReels {
+    width: 100%;
+    height: 92%;
+    background: black;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding: 10px 40px;
+    z-index: 0;
+    position: fixed;
+    bottom: 0px;
+}
+
+.reels {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.reelbox {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 40px);
+    scroll-snap-align: start;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 15px;
+}
+
+.videoBox {
+    width: 60%;
+    height: 85vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoBox video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nameinfo {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    z-index: 2;
+}
+
+.nameinfo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reaction {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 80%;
+}
+
+.reaction img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.reaction img:hover {
+    transform: scale(1.2);
+}
+
+/* ≤1445px */
+
+@media (max-width: 1445px) {
+
+    .reelbox {
+        height: 70vh;
+    }
+
+    .videoBox {
+        width: 65%;
+    }
+
+    .nameinfo img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/* ≤1024px */
+
+@media (max-width: 1024px) {
+
+    .backgroundReels {
+        padding: 0;
+    }
+
+    .videoBox {
+        height: 100%;
+    }
+
+    .reaction {
+        transform: scale(0.6);
+        height: 75vh;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .backgroundReels {
+        height: 75vh;
+        bottom: 60px;
+    }
+}
+
+/* ≤768px */
+
+@media (max-width: 768px) {
+
+    .videoBox {
+        width: 70%;
+    }
+
+    .nameinfo img {
+        width: 40px;
+        height: 40px;
+    }
+
+}

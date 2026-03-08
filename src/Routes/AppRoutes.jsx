@@ -9,6 +9,7 @@ import { FullScreenMessenger } from "../Pages/FullScreenMessenger/FullScreenMess
 import { PersonalChat } from "../Pages/FullScreenMessenger/PersonalChat/PersonalChat"
 import { Marketplace } from "../Pages/Marketplace/Marketplace"
 import { Products } from "../Pages/Marketplace/Products/Products"
+import { Reels } from "../Pages/Reels/Reels"
 export const AppRoutes = () => {
     return (
         <Routes>
@@ -19,6 +20,7 @@ export const AppRoutes = () => {
                 <Route path="games" element={<GamesPage />} />
                 <Route path="marketplace" element={<Marketplace />} />
                 <Route path="marketplace/:id" element={<Products />} />
+                <Route path="reels" element={<Reels />} />
                 <Route path="friends" element={<FriendsNav />} />
                 <Route path="messenger" element={<FullScreenMessenger />} >
                     <Route path=":id" element={<PersonalChat />} />
