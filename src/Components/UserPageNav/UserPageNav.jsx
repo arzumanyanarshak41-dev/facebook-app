@@ -1,9 +1,9 @@
-import { NavLink, useLocation } from "react-router-dom"
+import { NavLink, useLocation, useNavigate } from "react-router-dom"
 import styles from "./userPageNav.module.css"
 
 export const UserPageNav = () => {
     const location = useLocation();
-
+    const navigate = useNavigate()
     return (
         <div className={styles.UserPageNav}>
             <NavLink to="" end className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}            >
@@ -21,13 +21,8 @@ export const UserPageNav = () => {
                     Friends
                 </div>
             </NavLink>
-            <NavLink to="photos" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}                >
-                <div className={styles.innerLink}>
-                    Photos
-                </div>
-            </NavLink>
-            <NavLink to="reels" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}                >
-                <div className={styles.innerLink}>
+            <NavLink to="/home/reels" className={({ isActive }) => (isActive ? styles.activeLink : styles.link)}                >
+                <div className={styles.innerLink} >
                     Reels
                 </div>
             </NavLink>

@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useReducer, useState } from "react";
 import { MetaIcon } from "./SVG/MetaIcon";
 import { ArrowLeft } from "./SVG/ArrowLeft";
 import style from "./SignUpPage.module.css";
@@ -9,8 +9,13 @@ import { EyeOff } from "./SVG/EyeOff";
 import { ImportantIcon } from "./SVG/ImportantIcon";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectUsers } from "../../Store/Slices/UserSlice/UserSlice";
+import { CancelSignUp } from "../CancelSignUp/CancelSignUp";
 export const SignUpPage = () => {
   const navigate = useNavigate()
+  const users = useSelector(selectUsers)
+  const [openCancel, setopenCancel] = useState(false)
   const initialState = {
     dateDayStyl: { style: style.normStateDay, value: "" },
     dateMonthStyl: { style: style.normStateDay, value: "" },
@@ -283,7 +288,6 @@ export const SignUpPage = () => {
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mailOrPhone);
     const isPhone = /^\+?\d{8,15}$/.test(cleanedPhone);
 
-    if ((!isEmail && !isPhone) || password.length < 6) return;
     const bdate = `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
     const newId = String(Date.now());
 
@@ -306,12 +310,21 @@ export const SignUpPage = () => {
       islog: "home",
       lastSeen: "online",
     };
-    console.log(newUser);
-    await axios.post("http://localhost:3010/users", newUser)
+    console.log(1);
+    const findUser = users.some(el => (newUser.email && el.email === newUser.email) || (newUser.phone && el.phone === newUser.phone));
+    console.log(findUser);
+
+    if (findUser) {
+      setopenCancel(true)
+    } else {
+      await axios.post("http://localhost:3010/users", newUser)
+      navigate("/")
+    }
   };
 
   return (
     <form className={style.container} onSubmit={(e) => submitHandler(e)}>
+      {openCancel && <CancelSignUp setopenCancel={setopenCancel} />}
       <span className={style.arrowIconHolder}>
         <ArrowLeft />
       </span>
@@ -811,7 +824,7 @@ export const SignUpPage = () => {
           our products, including ads.
         </p>
       </div>
-      <button className={style.subButton} onClick={() => navigate("/")}>Submit</button>
+      <button className={style.subButton}>Submit</button>
       <button className={style.beforeButton} type="button" onClick={() => navigate("/")}>I already have an account</button>
     </form>
   );
