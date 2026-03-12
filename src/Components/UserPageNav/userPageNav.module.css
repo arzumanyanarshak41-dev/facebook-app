@@ -1,0 +1,45 @@
+.UserPageNav {
+    border-top: 1px solid #ced1d5;
+    height: 60px;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+}
+
+.innerLink {
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.link .innerLink:hover{
+    background-color: #f2f4f7;
+   
+}
+
+.link {
+    color: gray;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.activeLink {
+    text-decoration: none;
+    color: #0866ff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 4px 0;
+    border-bottom: 3px solid #0866ff;
+}
+
+@media screen and (max-width: 767px) {
+    .UserPageNav{
+        max-width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}

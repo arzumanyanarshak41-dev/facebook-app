@@ -1,0 +1,1048 @@
+{
+  "users": [
+    {
+      "id": "9000000000001",
+      "fname": "Alice",
+      "lname": "Johnson",
+      "email": "alice.johnson@example.com",
+      "usname": "alice01",
+      "notifications": [
+        {
+          "id": "1773265132921",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo1",
+          "time": "2026-03-11T21:38:52.921Z"
+        },
+        {
+          "id": "1773265270790",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo1",
+          "time": "2026-03-11T21:41:10.790Z"
+        },
+        {
+          "id": "1773265277575",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo1",
+          "time": "2026-03-11T21:41:17.575Z"
+        }
+      ],
+      "shorts": [
+        {
+          "id": "shorts1",
+          "url": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "description": "",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001",
+            "1773263918905"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-03-02T10:48:20.389Z"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        {
+          "id": "photo1",
+          "url": "https://picsum.photos/seed/photo1/600/600",
+          "description": "Weekend 🏖️",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000001",
+            "9000000000003"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://images.squarespace-cdn.com/content/v1/671e8646625b3e0e164c2309/46c38cf6-391f-4efc-9125-ae071182004a/ALI_2755.jpg",
+      "gender": "female",
+      "phone": "+37477200001",
+      "bdate": "1990-05-12",
+      "messages": [
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi bob",
+              "time": "04:34 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Alice",
+              "time": "04:35 PM"
+            }
+          ],
+          "seen": false
+        },
+        {
+          "friendId": "9000000000003",
+          "message": [],
+          "seen": false
+        },
+        {
+          "friendId": "9000000000004",
+          "message": [],
+          "seen": false
+        }
+      ],
+      "friends": [
+        "9000000000002",
+        "9000000000003",
+        "9000000000004"
+      ],
+      "password": "pass01",
+      "islog": "home",
+      "lastSeen": "online",
+      "Cover_Photo": "blob:http://localhost:3000/fca604e2-8d1b-4c92-9d81-9a63c75661f1"
+    },
+    {
+      "id": "9000000000002",
+      "fname": "Bob",
+      "lname": "Smith",
+      "email": "bob.smith@example.com",
+      "usname": "bob02",
+      "notifications": [],
+      "shorts": [
+        {
+          "id": "shorts2",
+          "url": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "description": "Photo number 4",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-03-02T10:48:20.389Z"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        {
+          "id": "photo2",
+          "url": "https://picsum.photos/seed/photo2/600/600",
+          "description": "Bryce Canyon National Park",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000003"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000001",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile2/400/400",
+      "gender": "male",
+      "phone": "+37477200002",
+      "bdate": "1989-07-21",
+      "messages": [
+        {
+          "friendId": "9000000000001",
+          "message": [
+            {
+              "sender": "him",
+              "text": "like",
+              "time": "05:29 PM"
+            },
+            {
+              "sender": "him",
+              "text": "a",
+              "time": "06:45 AM"
+            }
+          ],
+          "seen": true
+        },
+        {
+          "friendId": "9000000000003",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Charlie, did you see my last post?",
+              "time": "11:00 AM"
+            },
+            {
+              "sender": "me",
+              "text": "Whats Appppppp",
+              "time": "10:51 PM"
+            }
+          ],
+          "seen": true
+        }
+      ],
+      "friends": [
+        "9000000000001",
+        "9000000000003"
+      ],
+      "password": "pass02",
+      "islog": "home",
+      "lastSeen": "10:54 PM"
+    },
+    {
+      "id": "9000000000003",
+      "fname": "Charlie",
+      "lname": "Brown",
+      "email": "charlie.brown@example.com",
+      "usname": "charlie03",
+      "notifications": [],
+      "shorts": [
+        {
+          "id": "shorts3",
+          "url": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "description": "Photo number 4",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-03-02T10:48:20.389Z"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        {
+          "id": "photo3",
+          "url": "https://picsum.photos/seed/photo3/600/600",
+          "description": "Kitchen aestetics 🍽️",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Good",
+              "time": "2026-03-01T22:54:13.065Z"
+            },
+            {
+              "sender": "9000000000002",
+              "text": "Great",
+              "time": "2026-03-07T18:54:23.067Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile3/400/400",
+      "gender": "male",
+      "phone": "+37477200003",
+      "bdate": "1992-02-14",
+      "messages": [
+        {
+          "friendId": "9000000000001",
+          "message": [],
+          "seen": false
+        },
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Bob!",
+              "time": "11:10 AM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Charlie!",
+              "time": "11:15 AM"
+            }
+          ],
+          "seen": false
+        },
+        {
+          "friendId": "9000000000004",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Im text you about chlote",
+              "time": "10:22 PM"
+            },
+            {
+              "sender": "me",
+              "text": "Laves citik",
+              "time": "01:36 AM"
+            }
+          ],
+          "seen": false
+        },
+        {
+          "friendId": "1773263918905",
+          "message": [
+            {
+              "sender": "him",
+              "text": "Hi Im text you abhout MacBook",
+              "time": "01:32 AM"
+            },
+            {
+              "sender": "me",
+              "text": "Hi Gay",
+              "time": "01:35 AM"
+            },
+            {
+              "sender": "me",
+              "text": "like",
+              "time": "01:35 AM"
+            }
+          ],
+          "seen": true
+        }
+      ],
+      "friends": [
+        "9000000000001",
+        "9000000000002",
+        "9000000000004"
+      ],
+      "password": "pass03",
+      "islog": "home",
+      "lastSeen": "online",
+      "Cover_Photo": "blob:http://localhost:3000/75c30f24-0ce7-4ff8-9378-579f63412b37"
+    },
+    {
+      "id": "9000000000004",
+      "fname": "Diana",
+      "lname": "Evans",
+      "email": "diana.evans@example.com",
+      "usname": "diana04",
+      "notifications": [
+        {
+          "id": "7",
+          "userid": "9000000000001",
+          "status": "like",
+          "linkId": "photo3",
+          "time": "2026-02-20T11:21:43Z"
+        },
+        {
+          "id": "8",
+          "userid": "9000000000003",
+          "status": "friend",
+          "linkId": "9000000000004",
+          "time": "2026-02-20T11:21:43Z"
+        },
+        {
+          "id": "1773265126113",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo4",
+          "time": "2026-03-11T21:38:46.113Z"
+        }
+      ],
+      "shorts": [
+        {
+          "id": "shorts4",
+          "url": "https://filesamples.com/samples/video/mp4/sample_640x360.mp4",
+          "description": "Photo number 4",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-03-02T10:48:20.389Z"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        {
+          "id": "photo4",
+          "url": "https://picsum.photos/seed/photo4/600/600",
+          "description": "New Notebook for New Work 🫶",
+          "uploaded_at": "2026-02-25T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Hi",
+              "time": "2026-03-10T23:56:18.821Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile4/400/400",
+      "gender": "female",
+      "phone": "+37477200004",
+      "bdate": "1991-11-05",
+      "messages": [
+        {
+          "friendId": "9000000000003",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Charlie!",
+              "time": "12:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Diana!",
+              "time": "12:05 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Im text you about chlote",
+              "time": "10:22 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Laves citik",
+              "time": "01:36 AM"
+            }
+          ],
+          "seen": true
+        },
+        {
+          "friendId": "9000000000005",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Ethan, ready for the weekend?",
+              "time": "01:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Sure Diana!",
+              "time": "01:05 PM"
+            }
+          ],
+          "seen": true
+        },
+        {
+          "friendId": "9000000000001",
+          "message": [],
+          "seen": true
+        }
+      ],
+      "friends": [
+        "9000000000003",
+        "9000000000005",
+        "9000000000001",
+        "9000000000001",
+        "9000000000003"
+      ],
+      "password": "pass04",
+      "islog": "home",
+      "lastSeen": "10:54 PM"
+    },
+    {
+      "id": "9000000000005",
+      "fname": "Ethan",
+      "lname": "White",
+      "email": "ethan.white@example.com",
+      "usname": "ethan05",
+      "notifications": [
+        {
+          "id": "9",
+          "userid": "9000000000004",
+          "status": "like",
+          "linkId": "photo3",
+          "time": "2026-02-20T11:21:43Z"
+        },
+        {
+          "id": "10",
+          "userid": "9000000000001",
+          "status": "friend",
+          "linkId": "9000000000004",
+          "time": "2026-02-20T11:21:43Z"
+        }
+      ],
+      "shorts": [
+        {
+          "id": "shorts5",
+          "url": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "description": "Photo number 4",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            },
+            {
+              "sender": "9000000000001",
+              "text": "Greate",
+              "time": "2026-03-02T10:48:20.389Z"
+            }
+          ]
+        }
+      ],
+      "photos": [
+        {
+          "id": "photo5",
+          "url": "https://picsum.photos/seed/photo5/600/600",
+          "description": "What a beautiful view ❤️",
+          "uploaded_at": "2026-02-20T11:21:43Z",
+          "likes": [
+            "9000000000002",
+            "9000000000001"
+          ],
+          "comments": [
+            {
+              "sender": "9000000000002",
+              "text": "Nice photo!",
+              "time": "2026-02-20T20:00:00Z"
+            }
+          ]
+        }
+      ],
+      "profile_image": "https://picsum.photos/seed/profile5/400/400",
+      "gender": "male",
+      "phone": "+37477200005",
+      "bdate": "1993-03-30",
+      "messages": [
+        {
+          "friendId": "9000000000002",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hey Bob!",
+              "time": "02:00 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hi Ethan!",
+              "time": "02:05 PM"
+            }
+          ],
+          "seen": true
+        },
+        {
+          "friendId": "9000000000004",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Diana!",
+              "time": "01:05 PM"
+            },
+            {
+              "sender": "him",
+              "text": "Hey Ethan!",
+              "time": "01:10 PM"
+            }
+          ],
+          "seen": true
+        }
+      ],
+      "friends": [
+        "9000000000002",
+        "9000000000004"
+      ],
+      "password": "pass05",
+      "islog": "home",
+      "lastSeen": "online"
+    },
+    {
+      "id": "1773263918905",
+      "fname": "Serzh",
+      "lname": "Agagyulyan",
+      "email": "",
+      "usname": "serzhagagyulyan",
+      "notifications": [],
+      "shorts": [],
+      "photos": [],
+      "profile_image": "https://static.vecteezy.com/system/resources/previews/047/733/682/non_2x/grey-avatar-icon-user-avatar-photo-icon-social-media-user-icon-vector.jpg",
+      "gender": "male",
+      "phone": "077120253",
+      "bdate": "2003-06-08",
+      "messages": [
+        {
+          "friendId": "9000000000003",
+          "message": [],
+          "seen": false
+        }
+      ],
+      "friends": [],
+      "password": "123456",
+      "islog": "home",
+      "lastSeen": "online"
+    }
+  ],
+  "games": [
+    {
+      "title": "Fireboy And Watergirl",
+      "link": "https://www.friv.com/z/games/fireboyandwatergirlforest/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/fireboyandwatergirlforest/square-gamethumb-1-fireboyandwatergirlforest.png",
+      "category": "adventures",
+      "id": "e832"
+    },
+    {
+      "title": "Power Pamplona",
+      "link": "https://www.friv.com/z/games/powerpamplona/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/powerpamplona/square-gamethumb-1-powerpamplona.png",
+      "category": "action",
+      "id": "50eb"
+    },
+    {
+      "title": "4 Colors",
+      "link": "https://www.friv.com/z/games/4colors/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/4colors/square-gamethumb-1-4colors.png",
+      "category": "desktop",
+      "id": "2450"
+    },
+    {
+      "title": "Mad Fish",
+      "link": "https://www.friv.com/z/games/madfish/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/madfish/square-gamethumb-1-madfish.png",
+      "category": "action",
+      "id": "580e"
+    },
+    {
+      "title": "Bloxorz",
+      "link": "https://www.friv.com/z/games/bloxorz/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/bloxorz/square-gamethumb-1-bloxorz.png",
+      "category": "desktop",
+      "id": "cbe1"
+    },
+    {
+      "title": "Penalty Challenge",
+      "link": "https://www.friv.com/z/games/penaltychallenge/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/penaltychallenge/square-gamethumb-1-penaltychallenge.png",
+      "category": "sports",
+      "id": "d12e"
+    },
+    {
+      "title": "Moto X3M",
+      "link": "https://www.friv.com/z/games/motox3m/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/motox3m/square-gamethumb-1-motox3m.png",
+      "category": "ride",
+      "id": "e0a1"
+    },
+    {
+      "title": "Color Link",
+      "link": "https://www.friv.com/z/games/colorlink/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/colorlink/square-gamethumb-1-colorlink.png",
+      "category": "desktop",
+      "id": "df14"
+    },
+    {
+      "title": "Cascade Chaos",
+      "link": "https://www.friv.com/z/games/cascadechaos/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/cascadechaos/square-gamethumb-1-cascadechaos.png",
+      "category": "desktop",
+      "id": "d502"
+    },
+    {
+      "title": "Electric Man",
+      "link": "https://www.friv.com/z/games/electricman/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/electricman/square-gamethumb-1-electricman.png",
+      "category": "action",
+      "id": "6066"
+    },
+    {
+      "title": "Bad Ice Cream",
+      "link": "https://www.friv.com/z/games/badicecream/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/badicecream/square-gamethumb-1-badicecream.png",
+      "category": "adventures",
+      "id": "93fe"
+    },
+    {
+      "title": "Snail Bob",
+      "link": "https://www.friv.com/z/games/snailbob/game.html",
+      "image": "https://images.weserv.nl/?url=www.friv.com/z/games/snailbob/square-gamethumb-1-snailbob.png",
+      "category": "adventures",
+      "id": "bcac"
+    },
+    {
+      "title": "Biliard Pool",
+      "link": "https://www.friv.com/z/games/9ballpool/game.html",
+      "image": "https://www.coolmathgames.com/sites/default/files/Billiards_OG-logo.jpg",
+      "category": "sports",
+      "id": "6eda"
+    },
+    {
+      "title": "Stick Archery",
+      "link": "https://www.friv.com/z/games/stickarchery/game.html",
+      "image": "https://play-lh.googleusercontent.com/aH1ZMweqeIjHfH-zKvlGM6J3lCYRbe9qb4WIuoneMchEhMhxoJYKfrynbF7jyf1MVQ=w526-h296-rw",
+      "category": "action",
+      "id": "9152"
+    },
+    {
+      "title": "Warship",
+      "link": "https://www.friv.com/z/games/warship/game.html",
+      "image": "https://m.media-amazon.com/images/I/81pLmwcpNuL.jpg",
+      "category": "desktop",
+      "id": "511a"
+    },
+    {
+      "title": "Truck Loader",
+      "link": "https://www.friv.com/z/games/truckloader/game.html",
+      "image": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=1200,height=1200,fit=cover,f=png/e115ce49e7a1ddf315cfef76e8a8d00c/truck-loader.png",
+      "category": "desktop",
+      "id": "7eff"
+    },
+    {
+      "title": "2048",
+      "link": "https://www.friv.com/z/games/2048numbermatch/game.html",
+      "image": "https://play-lh.googleusercontent.com/74u5Dkdsk49JHtfw0mmDxA18JRVdN4nw1U4GOJhsGl1W9isqwyDQtfszmLxyj_jZBA",
+      "category": "desktop",
+      "id": "c831"
+    },
+    {
+      "title": "Block Tower",
+      "link": "https://www.friv.com/z/games/blocktower/game.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgI8iasCclxAstaNGFY2Tzc_TFiZcFahzT7Q&s",
+      "category": "desktop",
+      "id": "6f68"
+    }
+  ],
+  "marketplace": [
+    {
+      "id": "1",
+      "userId": "9000000000001",
+      "title": "Mercedes Benz E Class",
+      "price": 2200,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good condition car. Options: 2008 model, black color, automatic transmission, leather seats.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Davtashen"
+      },
+      "phone": "+37477000001",
+      "type": "vehicles",
+      "image": "https://img.mercedes-benz-kiev.com/data/lineup/mercedes-benz-e-class-w214/mercedes-benz-e-class-w214-22.jpg"
+    },
+    {
+      "id": "2",
+      "userId": "9000000000002",
+      "title": "BMW E60",
+      "price": 3400,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Clean BMW. Options: 2007 model, white color, sunroof, alloy wheels.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000002",
+      "type": "vehicles",
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e"
+    },
+    {
+      "id": "3",
+      "userId": "9000000000003",
+      "title": "Audi A6",
+      "price": 4100,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "No problems. Options: 2009 model, silver, automatic, GPS included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Gyumri",
+        "street": "Center"
+      },
+      "phone": "+37477000003",
+      "type": "vehicles",
+      "image": "https://images.unsplash.com/photo-1542362567-b07e54358753"
+    },
+    {
+      "id": "4",
+      "userId": "9000000000004",
+      "title": "Nike Jacket",
+      "price": 40,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Winter jacket. Options: size L, blue color, waterproof material, hood included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Ajapnyak"
+      },
+      "phone": "+37477000004",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1520975954732-35dd22299614"
+    },
+    {
+      "id": "5",
+      "userId": "9000000000005",
+      "title": "Adidas Hoodie",
+      "price": 30,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Almost new. Options: size M, black color, zipper hoodie, cotton material.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000005",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+    },
+    {
+      "id": "6",
+      "userId": "9000000000001",
+      "title": "Levis Jeans",
+      "price": 25,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Original. Options: size 32, blue denim, slim fit, button closure.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Malatia"
+      },
+      "phone": "+37477000006",
+      "type": "clothes",
+      "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+    },
+    {
+      "id": "7",
+      "userId": "9000000000002",
+      "title": "Baby Stroller",
+      "price": 120,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good stroller. Options: foldable, red color, 3 wheels, adjustable handle.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Avan"
+      },
+      "phone": "+37477000007",
+      "type": "children",
+      "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+    },
+    {
+      "id": "8",
+      "userId": "9000000000003",
+      "title": "Baby Bed",
+      "price": 90,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Wood baby bed. Options: white color, 120x60cm, mattress included, safety rails.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Nor Nork"
+      },
+      "phone": "+37477000008",
+      "type": "children",
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    },
+    {
+      "id": "9",
+      "userId": "9000000000004",
+      "title": "Lego Set",
+      "price": 20,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Large lego box. Options: 500 pieces, colorful, age 6+, compatible with other sets.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Erebuni"
+      },
+      "phone": "+37477000009",
+      "type": "toy",
+      "image": "https://images.unsplash.com/photo-1587654780291-39c9404d746b"
+    },
+    {
+      "id": "10",
+      "userId": "9000000000005",
+      "title": "Toy Car",
+      "price": 10,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Kids toy car. Options: red color, metal body, opening doors, battery included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000010",
+      "type": "toy",
+      "image": "https://jokomisiada.pl/hpeciai/ff4843177252fad6f9a84c7501dfdbdf/eng_pl_Beetle-car-metal-toy-car-opening-doors-light-sound-ZA4991-20552_3.jpg"
+    },
+    {
+      "id": "11",
+      "userId": "9000000000001",
+      "title": "2 Room Apartment",
+      "price": 55000,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Apartment in center. Options: 2 bedrooms, 1 bathroom, fully furnished, parking available.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Kentron"
+      },
+      "phone": "+37477000011",
+      "type": "realEstatey",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+    },
+    {
+      "id": "12",
+      "userId": "9000000000002",
+      "title": "House in Abovyan",
+      "price": 70000,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Big house. Options: 4 bedrooms, 2 bathrooms, garden, garage included.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Abovyan",
+        "street": "Center"
+      },
+      "phone": "+37477000012",
+      "type": "realEstatey",
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be"
+    },
+    {
+      "id": "13",
+      "userId": "9000000000003",
+      "title": "Football Ball",
+      "price": 15,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Adidas ball. Options: size 5, white color, durable material, official match ball.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Kapan",
+        "street": "Center"
+      },
+      "phone": "+37477000013",
+      "type": "sport",
+      "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b"
+    },
+    {
+      "id": "14",
+      "userId": "9000000000004",
+      "title": "Gym Dumbbells",
+      "price": 60,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "20kg dumbbells. Options: iron material, pair included, anti-slip grip, home use.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000014",
+      "type": "sport",
+      "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+    },
+    {
+      "id": "16",
+      "userId": "9000000000001",
+      "title": "British Cat",
+      "price": 150,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Cute cat. Options: vaccinated, female, grey color, 1 year old.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Avan"
+      },
+      "phone": "+37477000016",
+      "type": "animals",
+      "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131"
+    },
+    {
+      "id": "17",
+      "userId": "9000000000002",
+      "title": "iPhone 12",
+      "price": 420,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Good condition. Options: 64GB, black color, original charger, no scratches.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Center"
+      },
+      "phone": "+37477000017",
+      "type": "electronic",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": "18",
+      "userId": "9000000000003",
+      "title": "MacBook Air",
+      "price": 650,
+      "time": "2026-02-28T13:14:45.730Z",
+      "about": "Laptop 2020. Options: 13-inch, 256GB SSD, 8GB RAM, silver color, battery good.",
+      "notifications": [],
+      "address": {
+        "country": "Armenia",
+        "city": "Yerevan",
+        "street": "Arabkir"
+      },
+      "phone": "+37477000018",
+      "type": "electronic",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+    }
+  ]
+}

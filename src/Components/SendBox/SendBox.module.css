@@ -1,0 +1,67 @@
+.sendBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px) grayscale(80%);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.urlBox {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 500px;
+    max-width: 90vw;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.urlBox input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.urlBox img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .urlBox {
+        padding: 12px;
+    }
+
+    .urlBox input {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .urlBox img {
+        width: 20px;
+        height: 20px;
+    }
+}

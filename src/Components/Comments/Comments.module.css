@@ -1,0 +1,53 @@
+.oneOf {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: all 0.2s;
+    flex-direction: column;
+}
+.combody{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.oneOf:hover {
+    background-color: #f0f2f5;
+}
+
+.oneOf img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: rgba(128, 128, 128, 0.292);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.infoBox h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #050505;
+}
+
+.infoBox p {
+    margin: 0;
+    font-size: 14px;
+    color: #65676b;
+    line-height: 1.4;
+}
+
+.oneOf span {
+    font-size: 10px;
+    padding-left: 50px;
+}

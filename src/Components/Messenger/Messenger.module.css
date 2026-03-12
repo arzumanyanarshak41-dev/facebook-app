@@ -1,0 +1,146 @@
+.messenger {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 333;
+    background-color: white;
+    animation-name: openMessenger;
+    animation-timing-function: ease-in;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    z-index: 9999999;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .openSearch {
+        display: flex;
+        gap: 5px;
+        justify-content: flex-start;
+        border: none;
+        border-radius: 13px;
+        background-color: #f1f2f5;
+        padding: 5px 10px;
+    }
+
+    .chatFilter {
+        display: flex;
+        gap: 10px;
+        padding: 10px 0px;
+
+        button {
+            border: none;
+            background-color: transparent;
+            border-radius: 12px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+
+    .chats {
+        height: 40vh;
+        overflow-y: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .personMessenger {
+            border-radius: 8px;
+            transition: all 0.1s;
+            display: flex;
+            padding: 5px;
+            gap: 10px;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border: none;
+                border-radius: 50%;
+            }
+
+            .personInfo {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                h4 {
+                    font-weight: bold;
+                }
+
+                p {
+                    color: gray;
+                    width: 100%;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        font-size: 10px;
+                    }
+                }
+
+                .h4 {
+                    color: black;
+                    width: 100%;
+                    font-size: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        color: black;
+                    }
+
+                    span {
+                        font-size: 10px;
+                    }
+
+                    .circle {
+                        width: 10px;
+                        height: 10px;
+                        border: none;
+                        margin: 5px;
+                        border-radius: 50%;
+                        background-color: blue;
+                    }
+                }
+            }
+        }
+
+        .personMessenger:hover {
+            background-color: rgba(128, 128, 128, 0.279);
+        }
+    }
+}
+.reacts{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+@keyframes openMessenger {
+    from {
+        bottom: -600px;
+    }
+
+    to {
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,150 @@
+.createNewAd {
+    max-width: 500px;
+    width: 100%;
+    height: fit-content;
+    max-height: 90vh;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50px);
+    opacity: 0;
+    padding: 40px 20px;
+    animation: slideDown 0.4s ease-out forwards;
+    z-index: 9999;
+}
+
+.createNewAd label img {
+    width: 100px;
+    height: 100px;
+}
+
+.createNewAd label {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateX(-50%) translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.createNewAd span {
+    position: absolute;
+    top: 15px;  
+    right: 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.createNewAd .chooseImage {
+    width: 100%;
+    height: 150px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.createNewAd .chooseImage:hover {
+    border-color: #1877f2;
+}
+
+.createNewAd .chooseImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.createNewAd .nonSeen {
+    display: none;
+}
+
+.createNewAd input[type="text"],
+.createNewAd input[type="number"],
+.createNewAd input[type="tel"],
+.createNewAd textarea,
+.createNewAd select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.createNewAd input:focus,
+.createNewAd textarea:focus,
+.createNewAd select:focus {
+    outline: none;
+    border-color: #1877f2;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.3);
+}
+
+.createNewAd textarea {
+    min-height: 80px;
+    resize: none;
+}
+
+.createNewAd option {
+    font-size: 14px;
+}
+
+.createNewAd button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1877f2;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.createNewAd button:hover {
+    background: #166fe5;
+    transform: translateY(-1px);
+}
+
+.createNewAd button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 350px) {
+    .createNewAd {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        top: 40px;
+    }
+
+    .createNewAd .chooseImage {
+        height: 120px;
+    }
+
+    .createNewAd textarea {
+        min-height: 60px;
+    }
+}

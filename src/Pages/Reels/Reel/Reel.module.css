@@ -1,0 +1,142 @@
+.reelbox {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 40px);
+    scroll-snap-align: start;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 15px;
+}
+
+.videoBox {
+    width: 60%;
+    height: 85vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 0.3px solid white;
+}
+
+.videoBox video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nameinfo {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;
+    z-index: 2;
+}
+
+.nameinfo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reaction {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 80%;
+}
+
+.reaction img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.reaction img:hover {
+    transform: scale(1.2);
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.497);
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    width: 25%;
+    animation-name: openComments;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-duration: 0.3s;
+}
+
+.comments span {
+    cursor: pointer;
+}
+
+.comments form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 24%;
+    margin-top: 8px;
+    padding: 8px;
+    position: fixed;
+    bottom: 20px;
+}
+
+.comments form input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccd0d5;
+    background-color: #f0f2f5;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s, border 0.2s;
+}
+
+.comments form input:focus {
+    background-color: #ffffff;
+    border-color: #1877f2;
+}
+
+.comments form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments form button img {
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes openComments {
+    from {
+        right: -400px;
+    }
+
+    to {
+        right: 0px;
+    }
+}

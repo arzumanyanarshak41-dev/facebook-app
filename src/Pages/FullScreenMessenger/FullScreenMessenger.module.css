@@ -1,0 +1,197 @@
+.fullScreenMessenger {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    background-color: #f0f2f5;
+    border-top: 1px solid gray;
+}
+
+.showFriends {
+    width: 350px;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.openSearch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 16px;
+    padding: 8px 12px;
+    background-color: #e4e6eb;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.openSearch p {
+    margin: 0;
+    font-size: 14px;
+    color: #606770;
+}
+
+.chatFilter {
+    display: flex;
+    gap: 8px;
+    padding: 0 16px;
+    margin-bottom: 10px;
+}
+
+.chatFilter button {
+    flex: 1;
+    padding: 6px 0;
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    border-radius: 18px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #050505;
+}
+
+.chatFilter button:hover {
+    background-color: #f0f2f5;
+}
+
+.chats {
+    flex: 0.9;
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8px 8px 8px;
+}
+
+.personMessenger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.personMessenger:hover {
+    background-color: #e4e6eb;
+}
+
+.personMessenger img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personInfo h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.personInfo p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    color: #606770;
+}
+
+.h4 {
+    color: black;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        color: black;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        border: none;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+.personInfo span {
+    font-size: 11px;
+    color: #42b72a;
+}
+
+.chats::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.close {
+    display: flex;
+}
+
+@media (max-width: 1052px) {
+    .showFriends {
+        width: 280px;
+    }
+}
+
+@media (max-width: 900px) {
+    .fullScreenMessenger {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    .showFriends {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .fullScreenMessenger {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .showFriends {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70vh;
+        overflow-y: auto;
+        background: white;
+        transform: translateX(-100%);
+        transition: all 0.3s ease;
+        z-index: 20;
+    }
+
+    .active {
+        transform: translate(0);
+    }
+}

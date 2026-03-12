@@ -1,0 +1,205 @@
+.photoWindow {
+    position: fixed;
+    inset: 0;
+    background: #0f0f10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    width: 100%;
+    position: static;
+    right: 0px;
+}
+
+.photoWindow>img {
+    max-height: 100vh;
+    max-width: calc(100vw - 420px);
+    object-fit: contain;
+    background: black;
+    margin: 10px auto;
+}
+
+.comments {
+    width: 420px;
+    height: 90vh;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ddd;
+    position: relative;
+}
+
+.comments>span {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.userinfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.userinfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nameTime {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameTime h4 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.nameTime span {
+    font-size: 12px;
+    color: #65676b;
+}
+
+.reaction {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.reaction img {
+    width: 20px;
+    height: 20px;
+}
+.WhoLiked {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 3px 10px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 59%;
+    }
+
+    p {
+        font-size: 13px;
+        color: rgba(128, 128, 128, 0.624);
+    }
+}
+.likedCount {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #65676b;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.1s;
+}
+
+.likedCount:hover {
+    transform: scale(1.1);
+}
+
+.comments {
+    form {
+        display: flex;
+        border-top: 1px solid #ddd;
+        padding: 10px;
+        align-items: center;
+        gap: 10px;
+        position: static;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    form input {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 20px;
+        background: #f0f2f5;
+    }
+
+    form button {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form button img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.comments>.commentsList {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 15px;
+}
+
+
+.commentsList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.commentsList::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .photoWindow {
+        flex-direction: column;
+    }
+
+    .photoWindow>img {
+        max-width: 100%;
+        max-height: 60vh;
+    }
+
+    .comments {
+        width: 100%;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .photoWindow>img {
+        max-height: 50vh;
+    }
+
+    .userinfo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .likedCount {
+        font-size: 13px;
+    }
+
+    form input {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .comments {
+        height: 45vh;
+    }
+}

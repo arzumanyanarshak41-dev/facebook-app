@@ -1,0 +1,77 @@
+.backgroundReels {
+    width: 100%;
+    height: 92%;
+    background: black;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    padding: 10px 40px;
+    z-index: 0;
+    position: fixed;
+    bottom: 0px;
+}
+
+.reels {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+@media (max-width: 1445px) {
+
+    .reelbox {
+        height: 70vh;
+    }
+
+    .videoBox {
+        width: 65%;
+    }
+
+    .nameinfo img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    .backgroundReels {
+        padding: 0;
+    }
+
+    .videoBox {
+        height: 100%;
+    }
+
+    .reaction {
+        transform: scale(0.6);
+        height: 75vh;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .backgroundReels {
+        height: 75vh;
+        bottom: 60px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .videoBox {
+        width: 70%;
+    }
+
+    .nameinfo img {
+        width: 40px;
+        height: 40px;
+    }
+
+}

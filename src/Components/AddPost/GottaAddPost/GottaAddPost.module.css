@@ -1,0 +1,184 @@
+.gottaAddPost {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+        width: 30px;
+    }
+}
+
+.colorOrImage {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    input {
+        display: none;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e4e6eb;
+}
+
+.top h3 {
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.creatingBox {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 14px;
+    align-items: center;
+}
+
+.photoPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-radius: 12px;
+        padding: 5px 10px;
+        width: 100%;
+    }
+
+    .selectedImage {
+        max-width: 300px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+    }
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.userInfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.colorsShow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.userInfo h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.creatingBox textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: inherit;
+    color: #050505;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.creatingBox textarea::placeholder {
+    color: #65676b;
+}
+
+.colorChoosen {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #ccd0d5;
+}
+
+.gottaAddPost button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1877f2;
+    color: white;
+    cursor: pointer;
+
+    button:hover {
+        background: #166fe5;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .gottaAddPost {
+        max-width: 95%;
+    }
+
+    .creatingBox textarea {
+        font-size: 18px;
+        min-height: 80px;
+    }
+
+    .colorChoosen {
+        width: 28px;
+        height: 28px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .top h3 {
+        font-size: 18px;
+    }
+
+    .userInfo img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .creatingBox textarea {
+        font-size: 16px;
+        min-height: 70px;
+    }
+
+}

@@ -1,0 +1,161 @@
+.publication {
+    max-width: 850px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    transition: all 0.1s;
+}
+
+.publicText {
+    width: 100%;
+    min-height: 300px;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.userInfo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.nameinfo h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.WhoLiked {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 3px 10px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        border-radius: 59%;
+    }
+
+    p {
+        font-size: 13px;
+        color: rgba(128, 128, 128, 0.624);
+    }
+}
+
+.likedCount {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        color: gray;
+        transform: translateY(2px);
+    }
+}
+
+.nameinfo p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.discription {
+    padding: 0 15px 10px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.publicImage img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.reaction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.reaction img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.reaction img:hover {
+    transform: scale(1.2);
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    border-top: 1px solid rgba(128, 128, 128, 0.497);
+}
+
+
+.comments form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.comments form input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccd0d5;
+    background-color: #f0f2f5;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s, border 0.2s;
+}
+
+.comments form input:focus {
+    background-color: #ffffff;
+    border-color: #1877f2;
+}
+
+.comments form button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments form button img {
+    width: 24px;
+    height: 24px;
+}

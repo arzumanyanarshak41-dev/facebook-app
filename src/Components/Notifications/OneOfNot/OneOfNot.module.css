@@ -1,0 +1,106 @@
+.oneOfNot {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.oneOfNot:hover {
+    background-color: #f5f6f7;
+}
+
+.oneOfNot img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.notInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.notInfo h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #050505;
+}
+
+.notInfo p {
+    margin: 0;
+    font-size: 13px;
+    color: #65676b;
+}
+
+.notInfo span {
+    font-size: 12px;
+    color: #0164d1;
+}
+
+.buts {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.buts button {
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.buts button:first-child {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.buts button:first-child:hover {
+    background-color: #166fe5;
+}
+
+.buts button:last-child {
+    background-color: #e4e6eb;
+    color: #050505;
+}
+
+.buts button:last-child:hover {
+    background-color: #d8dadf;
+}
+
+@media (max-width: 600px) {
+    .oneOfNot {
+        padding: 8px 10px;
+    }
+
+    .oneOfNot img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .notInfo h4 {
+        font-size: 14px;
+    }
+
+    .notInfo p {
+        font-size: 12px;
+    }
+
+    .notInfo span {
+        font-size: 11px;
+    }
+
+    .buts button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

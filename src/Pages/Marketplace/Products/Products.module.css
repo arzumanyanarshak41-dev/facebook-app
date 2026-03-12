@@ -1,0 +1,175 @@
+.fullWindow {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left img {
+    max-width: 700px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.bottomBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.bottomBox h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #65676b;
+}
+
+.bottomBox h4 {
+    font-size: 14px;
+    color: #65676b;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    height: 100%;
+    overflow-y: auto;
+}
+
+.info h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.info h3 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.info p {
+    font-size: 14px;
+    color: #65676b;
+}
+
+.info button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #1877f2;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info button:hover {
+    background: #166fe5;
+}
+
+.info h5 {
+    font-size: 14px;
+    color: #050505;
+}
+
+.messageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.messageForm textarea {
+    width: 100%;
+    min-height: 80px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+.messageForm textarea:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+.messageForm button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #1877f2;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.messageForm button:hover {
+    background: #166fe5;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.deleteButton {
+    background-color: red !important;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .left img {
+        height: 300px;
+    }
+
+    .right {
+        width: 100%;
+        position: static;
+    }
+
+    .messageForm button {
+        width: 100%;
+    }
+}
