@@ -42,7 +42,7 @@ export const AppRoutes = () => {
                 <Route path="messenger" element={<FullScreenMessenger />} >
                     <Route path=":id" element={<PersonalChat />} />
                 </Route>
-                <Route path="userpage/" element={<UserPage />}>
+                <Route path="userpage/:id" element={<UserPage />}>
                     <Route index element={<UserPageAll />} />
                     <Route path="about" element={<UserPageAbout />}>
                         <Route index element={<AboutIntro />} />

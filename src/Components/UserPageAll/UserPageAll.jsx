@@ -5,9 +5,13 @@ import { AllPersonalDetails } from "../AllPersonalDetals/AllPersonalDetails"
 import styles from "./userPageAll.module.css"
 import { logedUserSelect } from "../../Store/Slices/LogedUserSlice/LogedUserSlice"
 import { Publication } from "../Publication/Publication"
+import { selectUsers } from "../../Store/Slices/UserSlice/UserSlice"
+import { useParams } from "react-router-dom"
 
 export const UserPageAll = () => {
-    const logedUser = useSelector(logedUserSelect)
+    const { id } = useParams()
+    const users = useSelector(selectUsers)
+    const logedUser = users.find(el => el.id == id)
     return (
         <div className={styles.UserPageAll}>
             <div className={styles.LeftPart}>

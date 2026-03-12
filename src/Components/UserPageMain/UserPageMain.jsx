@@ -1,4 +1,3 @@
-// import { All } from "../All/All";
 import { useDispatch, useSelector } from "react-redux";
 import { PeopleYouMayKnow } from "../PeopleYouMeyNow/PeopleYouMayKnow";
 import { UserAbout } from "../UserAbout/UserAbout";
@@ -7,10 +6,14 @@ import { useRef, useState } from "react";
 import { IoIosCamera } from "react-icons/io";
 import { changeUserCoverPhoto, logedUserSelect } from "../../Store/Slices/LogedUserSlice/LogedUserSlice";
 import { ChangeProfileCoverPhoto } from "../../Store/Slices/UserSlice/ChangeProfileCoverPhoto";
+import { useParams } from "react-router-dom";
+import { selectUsers } from "../../Store/Slices/UserSlice/UserSlice";
 export const UserPageMain = () => {
-  const logedUser = useSelector(logedUserSelect)
   const fileRef = useRef("");
   const dispatch = useDispatch()
+  const { id } = useParams()
+  const users = useSelector(selectUsers)
+  const logedUser = users.find(el => el.id == id)
   const chooseCoverPhoto = () => {
     fileRef.current.click();
   };
@@ -40,7 +43,7 @@ export const UserPageMain = () => {
         <div className={styles.coverPhotoBottom} onClick={(e) => e.stopPropagation()} >
           <label className={styles.addCoverPhoto} onClick={chooseCoverPhoto}>
             <IoIosCamera size={24} />
-            {logedUser.Cover_Photo ? <span>Edit cover photo</span> : <span>Add cover photo</span>}
+            {logedUser?.Cover_Photo ? <span>Edit cover photo</span> : <span>Add cover photo</span>}
           </label>
         </div>
 

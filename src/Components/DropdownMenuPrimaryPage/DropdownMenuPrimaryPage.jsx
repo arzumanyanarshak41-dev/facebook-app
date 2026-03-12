@@ -15,7 +15,7 @@ export const DropdownMenuPrimaryPage = ({ menusections, nextpage, setnext, setus
 
         >
             <div className={styles.UserChange}>
-                <div className={styles.username} onClick={() => { navigate("/home/userpage"); setuserDropdownMenuOpen(false) }}>
+                <div className={styles.username} onClick={() => { navigate(`/home/userpage/${loginUser.id}`); setuserDropdownMenuOpen(false) }}>
                     <img src={loginUser.profile_image} alt="userimg" />
                     <span>
                         <span>{loginUser.fname}</span>

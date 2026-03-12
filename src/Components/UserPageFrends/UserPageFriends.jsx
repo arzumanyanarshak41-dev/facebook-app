@@ -1,100 +1,40 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import FriendsCss from "./userPageFriends.module.css";
-
-const friends = [
-  {
-    id: 1,
-    name: "Иван Петров",
-    mutual: 12,
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
-    birthday: true,
-    following: false,
-    recently: true,
-  },
-  {
-    id: 2,
-    name: "Анна Смирнова",
-    mutual: 8,
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
-    birthday: false,
-    following: true,
-    recently: false,
-  },
-  {
-    id: 3,
-    name: "Алексей Иванов",
-    mutual: 5,
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
-    birthday: false,
-    following: true,
-    recently: true,
-  },
-  {
-    id: 4,
-    name: "Мария Кузнецова",
-    mutual: 3,
-    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
-    birthday: true,
-    following: false,
-    recently: false,
-  },
-  {
-    id: 5,
-    name: "Дмитрий Соколов",
-    mutual: 15,
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-    birthday: false,
-    following: false,
-    recently: true,
-  },
-  {
-    id: 6,
-    name: "Екатерина Орлова",
-    mutual: 6,
-    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
-    birthday: false,
-    following: true,
-    recently: false,
-  },
-  {
-    id: 7,
-    name: "Максим Волков",
-    mutual: 9,
-    avatar: "https://randomuser.me/api/portraits/men/7.jpg",
-    birthday: true,
-    following: true,
-    recently: true,
-  },
-  {
-    id: 8,
-    name: "Ольга Васильева",
-    mutual: 11,
-    avatar: "https://randomuser.me/api/portraits/women/8.jpg",
-    birthday: false,
-    following: false,
-    recently: false,
-  },
-];
+import { useNavigate, useParams } from "react-router-dom";
+import { selectUsers } from "../../Store/Slices/UserSlice/UserSlice";
+import { useSelector } from "react-redux";
 
 export const UserPageFriends = () => {
   const [search, setSearch] = useState("");
   const [activeTab, setActiveTab] = useState("all");
+  const { id } = useParams();
+  const navigate = useNavigate()
+  const users = useSelector(selectUsers);
 
+  // Найти пользователя, страница которого открыта
+  const logedUser = users.find(el => el.id === id);
+
+  // Получить друзей текущего пользователя
+  const friends = useMemo(() => {
+    if (!logedUser?.friends) return [];
+    return users.filter(user => logedUser.friends.includes(user.id));
+  }, [users, logedUser]);
+
+  // Фильтрация по поиску и вкладкам
   const filteredFriends = friends
-    .filter((friend) =>
-      friend.name.toLowerCase().includes(search.toLowerCase())
+    .filter(friend =>
+      `${friend.fname} ${friend.lname}`.toLowerCase().includes(search.toLowerCase())
     )
-    .filter((friend) => {
+    .filter(friend => {
       switch (activeTab) {
         case "birthdays":
-          return friend.birthday;
-
-        case "following":
-          return friend.following;
-
+          return !!friend.bdate; // оставляем тех, у кого есть дата рождения
         case "recentlyAdded":
-          return friend.recently;
-
+          // предположим, что недавно добавленные – это первые 5 друзей в списке
+          return friends.indexOf(friend) < 5;
+        case "following":
+          // если поле following есть у пользователя
+          return logedUser.following?.includes(friend.id);
         default:
           return true;
       }
@@ -102,7 +42,6 @@ export const UserPageFriends = () => {
 
   return (
     <div className={FriendsCss.page}>
-      {/* HEADER */}
       <div className={FriendsCss.header}>
         <div>
           <a href="/" className={FriendsCss.allFriends}>
@@ -113,7 +52,7 @@ export const UserPageFriends = () => {
         <div className={FriendsCss.headerRight}>
           <form
             className={FriendsCss.searchForm}
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={e => e.preventDefault()}
           >
             <div className={FriendsCss.searchWrapper}>
               <svg
@@ -130,11 +69,10 @@ export const UserPageFriends = () => {
                 type="text"
                 placeholder="Search friends"
                 value={search}
-                onChange={(e) => setSearch(e.target.value)}
+                onChange={e => setSearch(e.target.value)}
                 className={FriendsCss.searchInput}
               />
             </div>
-
           </form>
 
           <button className={FriendsCss.grayBtn}>Friend requests</button>
@@ -143,7 +81,6 @@ export const UserPageFriends = () => {
         </div>
       </div>
 
-      {/* TABS */}
       <div className={FriendsCss.tabs}>
         <span
           className={activeTab === "all" ? FriendsCss.active : ""}
@@ -174,28 +111,31 @@ export const UserPageFriends = () => {
         </span>
       </div>
 
-      {/* FRIENDS GRID */}
       <div className={FriendsCss.grid}>
-        {filteredFriends.map((friend) => (
-          <div key={friend.id} className={FriendsCss.card}>
-            <div className={FriendsCss.cardLeft}>
-              <img src={friend.avatar} alt={friend.name} />
+        {filteredFriends.length > 0 ? (
+          filteredFriends.map(friend => (
+            <div key={friend.id} className={FriendsCss.card}>
+              <div className={FriendsCss.cardLeft}>
+                <img src={friend.profile_image} alt={`${friend.fname}`} />
 
-              <div className={FriendsCss.friendsDiv}>
-                <a href="/" className={FriendsCss.friendsName}>
-                  {friend.name}
-                </a>
+                <div className={FriendsCss.friendsDiv}>
+                  <a href={`/home/userPage/${friend.id}`} className={FriendsCss.friendsName}>
+                    {friend.fname} {friend.lname}
+                  </a>
 
-                <a href="/" className={FriendsCss.mutualFriends}>
-                  {friend.mutual} общих друзей
-                </a>
+                  <p  className={FriendsCss.mutualFriends}>
+                    {friend.mutual || 0} общих друзей
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <button className={FriendsCss.menuBtn}>⋯</button>
-          </div>
-        ))}
+              <button className={FriendsCss.menuBtn}>⋯</button>
+            </div>
+          ))
+        ) : (
+          <p>No friends found</p>
+        )}
       </div>
-    </div>
+    </div >
   );
 };

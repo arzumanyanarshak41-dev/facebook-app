@@ -6,10 +6,13 @@ import colorSelectPNG from '../../../Asets/colorSelectIcon.jpg'
 import closeColorsIcon from '../../../Asets/closeColorsPNG.png'
 import galeryIcon from '../../../Asets/galeryAddOpeningIcon.jpg'
 import { useState } from 'react'
-import { addPost } from '../../../Store/Slices/UserSlice/UserSlice'
+import { addPost, selectUsers } from '../../../Store/Slices/UserSlice/UserSlice'
 import axios from 'axios'
+import { useParams } from 'react-router-dom'
 export const GottaAddPost = ({ setOpenPosting }) => {
-    const logedUser = useSelector(logedUserSelect)
+    const { id } = useParams()
+    const users = useSelector(selectUsers)
+    const logedUser = users.find(el => el.id == id)
     const [colorsOpen, setColorsOpen] = useState(true)
     const [selectedColor, setSelectedColor] = useState("blue")
     const [selectedImage, setSelectedImage] = useState(null);
