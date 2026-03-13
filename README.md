@@ -1,155 +1,186 @@
-# Facebook UI Clone (in Process)
+# Facebook App Clone
 
-⚠️ **This project is currently in development**  
-// Some features may not work yet  
-**A modern Facebook-style social media frontend application built with React.js**
+⚠️ **This project is not affiliated with Facebook or Meta in any way. It is built purely for educational purposes.**
 
-**// Note:** This project is for educational and portfolio purposes only.  
-**It is not affiliated with Meta or Facebook.**
+**About:**  
+This is a **learning project inspired by Facebook**, built to practice React, Redux, and Front-End development.
 
----
+A modern **Facebook-like social network application** built with **React, Redux Toolkit, and modern Front-End technologies**.
 
-## Project Overview
+This project replicates the core functionality of Facebook including authentication, posts, comments, messenger, friends, and user profiles.
 
-**This application simulates the main Facebook interface structure:**
-
-- Authentication system (Login / Sign Up)
-- Navigation bar
-- Left sidebar menu
-- Main publications (posts feed)
-- Right sidebar
-- Messenger system (Mini + Fullscreen)
-- Marketplace (Products, Listings, Filters, Search)
-- Reels (in progress)
-- Like / Comment / Send interactions
-
-**// Goal:** Practice building a large structured frontend application using reusable components, state management, and responsive design
+It was built as a large learning project to practice **Front-End architecture, state management, API integration, and real-world UI development**.
 
 ---
 
-## Components Overview
+# Demo
 
-**The project uses reusable React components organized by feature:**
-
-- **AddPost, Publication, Comments, SendBox** – Components for creating, displaying, and interacting with posts, including comments and sending messages.
-- **Messenger, FullScreenMessenger** – Mini and fullscreen messenger components with local storage and state-based rendering.
-- **MarketplaceSearchedResult, CreateNewAd** – Components for Marketplace features: product listings, searching, filtering, and adding new products.
-- **GeneralMenu, DropdownMenuPrimaryPage, DropdownMenuSecondaryPage, DropdownSettingMenu, GeneralRightSide** – Navigation menus, dropdowns, and sidebar menu sections.
-- **UserPageMain, UserPageAbout, UserPageAll, UserPageFrends, UserPageNav, UserAbout** – User profile pages: main page, about, friends, and navigation between profile sections.
-- **NavMenu, PeopleYouMeyNow, SearchGeneral, Notifications** – Additional interface components for user interactions and search features.
-- **LoginPage, SignUpPage, AllPersonalDetals** – Authentication and user details components.
-- **PhotoWindow** – Component for viewing photos in posts or user profiles.
-
-**All components** manage their own state or interact with **Redux Toolkit** for global state, using **React hooks and memoization** to optimize rendering.
+Coming soon...
 
 ---
 
-## Redux, State Management & API
-
-- **Redux Toolkit**: Global state management for posts, users, messenger, and marketplace data.
-- **Hooks & memo**: Components use custom hooks and `React.memo` for optimized rendering.
-- **Mock API**: `json-server` provides fake API endpoints for posts, products, and users.
-- **LocalStorage**: Persists authentication state, posts, messages, and user interactions.
-
----
+# Features
 
 ## Authentication
 
-### Log In
+- User signup
+- User login
+- Session persistence
+- Logout functionality
 
-- User login form
-- State-based authentication
-- LocalStorage persistence
-- Redirect to main page after successful login
+## User Profile
 
-### Sign Up (In Process)
+- Personal profile page
+- Change profile photo
+- Edit personal information
+- Display user posts
 
-- Registration form
-- User data validation
-- Allows new users to create accounts
-- Data stored via Redux + LocalStorage
+## Posts System
 
----
-
-## Features
-
-### General Page
-
-- Publications feed
-- Like button
+- Create posts
+- View posts
+- Like system
 - Comment system
-- Send / Share button
-- Dynamic UI updates
+- Dynamic rendering of posts
 
-### Navigation Menu
+## Friends System
 
-- Search people
-- Reels (in progress)
-- Friends
-- Marketplace (in development)
-- Games
-- Messenger
+- View friends
+- Friend suggestions
+- Friend navigation panel
 
-### Sidebars
+## Messenger
 
-- Left sidebar (navigation & sections)
-- Right sidebar (contacts / additional info)
+- Chat interface
+- Chat navigation
+- Message UI
 
-### Messenger
+## Notifications
 
-- **Mini Messenger**
-  - Compact chat in sidebar
-  - Shows recent contacts and messages
-  - State-based rendering
-  - LocalStorage persists chat history
+- Notification system
+- UI indicators
 
-- **Fullscreen Messenger**
-  - Expands messenger to full-screen view
-  - Easier to read and send messages
-  - Audio notifications for sent messages
-  - Auto-scrolls to latest message
-  - State-based rendering with LocalStorage persistence
+## Navigation
 
-**Usage:**  
-Click Messenger icon → Mini Messenger  
-Click expand button → Fullscreen Messenger  
-Type and send messages → instantly updated and saved locally
-
-### Marketplace
-
-- Browse and interact with products using **dynamic listings**
-- Search and filter products by **category, price, or other attributes**
-- View detailed product pages with information like **title, price, description, and seller info**
-- **Reusable Components**: `ProductCard`, `FilterMenu`, `ProductDetail`
-- **Data Handling**: Fetched from **local JSON / mock API**; state managed via **Redux Toolkit**; LocalStorage saves user interactions (cart/wishlist planned)
-
-### Posts (Adding / Creation Logic)
-
-- Users can **create new posts** with text, images, or videos
-- **Post Components**: `CreatePost`, `PostCard`, `CommentsSection`
-- **State Management**: Posts added to Redux store; Likes, comments, shares update dynamically
-- **Persistence**: Saved in LocalStorage
+- Sidebar navigation
+- Responsive menu
+- Messenger popup
 
 ---
 
-## Data Persistence
+# Tech Stack
 
-- LocalStorage used for storing user data, posts, and messages
-- Authentication state saved in browser
-- Posts and marketplace interactions persist locally
+## Front-End
+
+- React
+- React Router
+- Redux Toolkit
+- Axios
+
+## Styling
+
+- CSS Modules
+- Responsive design
+
+## State Management
+
+- Redux
+- Async Thunks
+- Global state architecture
+
+## Backend (Mock API)
+
+- JSON Server
 
 ---
 
-## Tech Stack
+# Project Structure
 
-- **React.js (with Hooks & memo)**
-- **JavaScript (ES6+)**
-- **Redux Toolkit**
-- **HTML5 & CSS3 (Flexbox, Responsive Design)**
-- **Axios / json-server** 
-- **LocalStorage API**
+    src
+    │
+    ├── Components
+    │   ├── NavMenu
+    │   ├── FriendsNav
+    │   ├── Messenger
+    │   └── UI Components
+    │
+    ├── Pages
+    │   ├── Home
+    │   ├── Profile
+    │   ├── Messenger
+    │   └── Auth Pages
+    │
+    ├── Store
+    │   ├── Slices
+    │   │   ├── UserSlice
+    │   │   ├── LogedUserSlice
+    │   │   └── PostsSlice
+    │   │
+    │   └── Store Configuration
+    │
+    ├── API
+    │   └── Axios requests
 
 ---
+
+# Installation
+
+Clone the repository
+
+    git clone https://github.com/arzumanyanarshak41-dev/facebook-app.git
+
+Go to the project folder
+
+    cd facebook-app
+
+Install dependencies
+
+    npm install
+
+Start the project
+
+    npm start
+
+---
+
+# API
+
+This project uses a **local JSON server** as a mock backend.
+
+Run JSON server
+
+    npx json-server --watch db.json --port 3010
+
+---
+
+# Key Learning Goals
+
+This project was built to practice:
+
+- Large scale React project structure
+- Redux state management
+- Async data fetching
+- Component architecture
+- UI replication of real social networks
+- Handling complex state interactions
+
+---
+
+# Future Improvements
+
+- Real backend (Node.js + Express)
+- Real-time messaging with WebSockets
+- Notifications system
+- Performance optimizations
+- Mobile responsive improvements
+- Image uploads
+- Authentication with JWT
+
+---
+
+# License
+
+## This project is for **educational purposes**.
 
 ## Screenshots
 
@@ -180,6 +211,14 @@ Type and send messages → instantly updated and saved locally
 ### User Page
 
 ![User Page](./src/Asets/UserPageScreen.png)
+
+---
+
+# Author
+
+**Arshak Arzumanyan**
+
+## Frontend Developer (React)
 
 ---
 
