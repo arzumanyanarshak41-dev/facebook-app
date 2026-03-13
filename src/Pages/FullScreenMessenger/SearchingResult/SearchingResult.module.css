@@ -1,0 +1,91 @@
+.searchingResult {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.personMessenger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.personMessenger:hover {
+    background-color: #e4e6eb;
+}
+
+.personMessenger img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.personInfo h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.personInfo p {
+    margin: 2px 0 0 0;
+    font-size: 12px;
+    color: #606770;
+}
+
+.h4 {
+    color: black;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        color: black;
+    }
+
+    span {
+        font-size: 10px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        border: none;
+        margin: 5px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+.personInfo span {
+    font-size: 11px;
+    color: #42b72a;
+}
+
+.chats::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.close {
+    display: flex;
+}

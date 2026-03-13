@@ -65,7 +65,7 @@ export const PersonalChat = () => {
             <div className={styles.personalChat}>
                 <audio src={messegSendAudio} ref={audioPlay}></audio>
                 <div className={styles.top}>
-                    <div className={styles.userinfo}>
+                    <div className={styles.userinfo} onClick={() => navigate(`/home/userPage/${personUser.id}`)}>
                         <img src={personUser.profile_image} alt="" />
                         <div className={styles.persActive}>
                             <h4>{personUser.fname} {personUser.lname}</h4>

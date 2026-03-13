@@ -38,7 +38,7 @@ export const Publication = ({ photo }) => {
     useEffect(() => {
         showLikedUsers()
     }, [photo.likes])
-    
+
     const getTime = (uploadedAt) => {
         const when = new Date() - new Date(uploadedAt);
         const whenSec = Math.floor(when / 1000);
@@ -66,7 +66,7 @@ export const Publication = ({ photo }) => {
         <div className={styles.publication}>
             <audio src={commentSendAudio} ref={audioPlay}></audio>
             <audio src={likeAudio} ref={likeAudioPaly}></audio>
-            <div className={styles.userInfo}>
+            <div className={styles.userInfo} onClick={() => navigate(`/home/userpage/${photo.userid}`)}>
                 <img src={photo.profile_image} alt="" />
                 <div className={styles.nameinfo}>
                     <h4>{photo.fname} {photo.lname}</h4>

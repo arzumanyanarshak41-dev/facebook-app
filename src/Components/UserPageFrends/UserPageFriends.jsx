@@ -11,16 +11,13 @@ export const UserPageFriends = () => {
   const navigate = useNavigate()
   const users = useSelector(selectUsers);
 
-  // Найти пользователя, страница которого открыта
   const logedUser = users.find(el => el.id === id);
 
-  // Получить друзей текущего пользователя
   const friends = useMemo(() => {
     if (!logedUser?.friends) return [];
     return users.filter(user => logedUser.friends.includes(user.id));
   }, [users, logedUser]);
 
-  // Фильтрация по поиску и вкладкам
   const filteredFriends = friends
     .filter(friend =>
       `${friend.fname} ${friend.lname}`.toLowerCase().includes(search.toLowerCase())
@@ -28,12 +25,10 @@ export const UserPageFriends = () => {
     .filter(friend => {
       switch (activeTab) {
         case "birthdays":
-          return !!friend.bdate; // оставляем тех, у кого есть дата рождения
+          return !!friend.bdate; 
         case "recentlyAdded":
-          // предположим, что недавно добавленные – это первые 5 друзей в списке
           return friends.indexOf(friend) < 5;
         case "following":
-          // если поле following есть у пользователя
           return logedUser.following?.includes(friend.id);
         default:
           return true;

@@ -19,6 +19,7 @@ export const General = () => {
         dispatch(usersFetch())
         dispatch(logedUserAPI())
     }, [dispatch])
+
     const allPhotos = [];
     users?.forEach(user => {
         user.photos.forEach(photo => {
@@ -31,7 +32,6 @@ export const General = () => {
             });
         });
     });
-    console.log(window.location.href);
 
     const sortedPhotos = allPhotos.sort((a, b) => new Date(b.uploaded_at) - new Date(a.uploaded_at))
     return (

@@ -6,10 +6,12 @@ import { useEffect, useMemo, useState } from 'react'
 import { usersFetch } from '../../Store/Slices/UserSlice/API'
 import { logedUserAPI } from '../../Store/Slices/LogedUserSlice/LogedUserAPI'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 export const FriendsNav = () => {
     const users = useSelector(selectUsers)
     const logedUser = useSelector(logedUserSelect)
     const dispatch = useDispatch()
+    const navigate = useNavigate()
     const recomendedFriends = useMemo(() => {
         if (!logedUser) return []
 
@@ -43,7 +45,6 @@ export const FriendsNav = () => {
         dispatch(usersFetch())
         dispatch(logedUserAPI())
     }, [])
-    console.log(recomendedFriends);
     async function sendNotification(id) {
         const friend = users.find(u => u.id === id);
         if (!friend) return;
@@ -63,14 +64,14 @@ export const FriendsNav = () => {
             <h3>People you may know</h3>
             <div className={styles.friends}>
                 {localFriends.map((user) => (
-                    <div className={styles.oneofRecomendet} key={user.id}>
+                    <div className={styles.oneofRecomendet} key={user.id} >
                         <img
                             src={user.profile_image}
                             alt={`${user.fname} ${user.lname}`}
                             className={styles.avatar}
                         />
                         <div className={styles.userinfo}>
-                            <p>{user.fname} {user.lname}</p>
+                            <p onClick={() => navigate(`/home/userPage/${user.id}`)}>{user.fname} {user.lname}</p>
                             {user.commonFriends > 0 && (
                                 <span>👥 {user.commonFriends} mutual friend{user.commonFriends > 1 ? 's' : ''}</span>
                             )}

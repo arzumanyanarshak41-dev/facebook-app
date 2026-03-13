@@ -18,12 +18,12 @@ export const GeneralRightSide = () => {
     const menuItems = [
         {
             title: "Friends",
-            link: "/friends",
+            link: `/home/userPage/${logedUser.id}/frends`,
             image: friendsPNG
         },
         {
             title: "AddFrends",
-            link: "/addFriends",
+            link: "/home/friends",
             image: GroupPNG
         },
         {
@@ -43,7 +43,7 @@ export const GeneralRightSide = () => {
         },
         {
             title: "Reels",
-            link: "/reels",
+            link: "/home/reels",
             image: reelsPNG
         }
     ];
@@ -71,7 +71,7 @@ export const GeneralRightSide = () => {
     ]
     return (
         <ul className={styles.generalRightSide}>
-            <li className={styles.sidebarItem} onClick={()=>navigate("userpage")}>
+            <li className={styles.sidebarItem} onClick={() => navigate(`userpage/${logedUser.id}`)}>
                 <img src={logedUser.profile_image} />
                 <span>{logedUser.fname} {logedUser.lname}</span>
             </li>

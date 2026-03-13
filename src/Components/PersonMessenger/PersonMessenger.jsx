@@ -8,6 +8,7 @@ import { changeLogedUser } from '../../Store/Slices/LogedUserSlice/ChangeLogedUs
 import { openMess } from '../../Store/Slices/messengerOpenSlicer/messengerOpenSlicer'
 import likeIcon from '../../Asets/blue-like-button-icon.webp'
 import messegSendAudio from '../../Asets/messageSendAudio.mp3'
+import { useNavigate } from 'react-router-dom'
 export const PersonMessenger = ({ id, setPerson }) => {
     const logedUser = useSelector(logedUserSelect)
     const [personUser, setPersonUser] = useState(null)
@@ -15,7 +16,7 @@ export const PersonMessenger = ({ id, setPerson }) => {
     const ChatsRef = useRef(null)
     const audioPlay = useRef(null)
     const dispatch = useDispatch()
-
+    const navigate = useNavigate()
     const api = axios.create({ baseURL: "http://localhost:3010/users/" })
 
     useEffect(() => {
@@ -60,7 +61,7 @@ export const PersonMessenger = ({ id, setPerson }) => {
             <div className={styles.messenger}>
                 <audio src={messegSendAudio} ref={audioPlay}></audio>
                 <div className={styles.top}>
-                    <div className={styles.userinfo}>
+                    <div className={styles.userinfo} onClick={() => navigate(`/home/userPage/${personUser.id}`)}>
                         <img src={personUser.profile_image} alt="" />
                         <div className={styles.persActive}>
                             <h4>{personUser.fname} {personUser.lname}</h4>

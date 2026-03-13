@@ -80,13 +80,11 @@
 .underTextHolder{ 
   display: none; 
   padding: 5px 0 ; 
-  /* display: flex; */ 
   align-items: center; 
   gap: 0 5px; 
   transition: all 0.2s; 
 } 
 .underText { 
-  /* display: none; */ 
   color: #d31130; 
   font-size: 15px; 
   transition: all 0.2s; 
@@ -130,9 +128,7 @@
   background-color: white; 
   max-width: 420px; 
   width: 100%; 
-  /* height: 100px; */ 
-  /* min-height: 20px ; */ 
-  /* padding: 10px; */ 
+
   right: 25%; 
   top: 100%; 
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
@@ -142,9 +138,7 @@
   } 
 } 
  
-/* .specInfo{ 
- 
-} */ 
+
  
 .nameHolder { 
   display: flex; 
@@ -161,7 +155,6 @@
   height: 60px; 
   overflow: hidden; 
   width: 100%; 
-  /* line-height: 30px; */ 
   padding: 20px 5px; 
   transition: all 0.3s; 
   .text { 
@@ -186,7 +179,6 @@
   max-width: 290px; 
   height: 60px; 
   width: 100%; 
-  /* line-height: 30px; */ 
   padding: 20px 5px; 
 } 
  
@@ -199,8 +191,6 @@
   pointer-events: none; 
 } 
 .active { 
-  /* color: #006cd8; */ 
-  /* transform: translateY(-50%); */ 
   top: 2px; 
   left: 10px; 
   font-size: 16px; 
@@ -226,7 +216,6 @@ border: none;
   max-width: 290px; 
   height: 60px; 
   width: 100%; 
-  /* line-height: 30px; */ 
   padding: 20px 5px; 
   .text { 
     position: absolute; 
@@ -240,7 +229,6 @@ border: none;
 } 
 .tel-label-text { 
   font-weight: bold; 
-  /* pointer-events: none; */ 
 } 
 .telInp { 
   background-color: transparent;
@@ -252,15 +240,11 @@ border: none;
   outline: none; 
   bottom: 1px; 
   font-size: 17px; 
-  /* border: 1px solid black; */ 
-  /* z-index: -1; */ 
 } 
-/* norm state */ 
 .telInpHolderNormSate { 
   position: relative; 
   max-width: 680px; 
   width: 100%; 
-  /* min-width: 570px; */ 
   height: 50px; 
   transition: all 0.5s; 
   border: 1.5px solid #ccd3db; 
@@ -280,7 +264,6 @@ border: none;
     border: 1.5px solid #606e7d; 
   } 
 } 
-/* onfocus */ 
 .telInpOnFocusChange { 
   position: relative; 
   border: 1.5px solid #006cd8; 
@@ -308,7 +291,6 @@ border: none;
   max-width: 680px; 
   width: 100%; 
   height: 50px; 
-  /* transition: all 0.5s; */ 
   border-radius: 10px; 
   padding: 8px; 
   transition: all 0.2s; 
@@ -346,9 +328,7 @@ border: none;
     transition: all 0.1s; 
   } 
 } 
- 
-/* //////////////////////////////// */ 
-/* -----------select style--------------- */ 
+
  
 .date-select-holder { 
   display: flex; 
@@ -378,7 +358,6 @@ border: none;
   } 
  
 
-  /* .selDatDay{} */ 
  
   .selOpt { 
     font-size: 20px; 
@@ -415,15 +394,12 @@ border: none;
     font-size: 16px; 
   }
 
-/* .selDatDay{} */ 
  
   .selOpt { 
     font-size: 20px; 
     background-color: #cccccc; 
     border-radius: 10px; 
-    /* &:hover { 
-      background-color: #a0a0a0; 
-    } */ 
+    
   } 
 } 
  
@@ -452,7 +428,7 @@ transform: scale(0.7);
     left: -5px; 
     transform: scale(0.7); 
     transition: all 0.5s; 
-  }/* .selDatDay{} */ 
+  }
   &:hover { 
     border: 1.5px solid #606e7d; 
   } 
@@ -496,7 +472,6 @@ transform: scale(0.7);
 .genderSection { 
   width: 100%; 
 } 
-/* -------------------*/ 
 @media (max-width: 700px) { 
    .container{
   padding: 4px 67px; 
@@ -521,9 +496,7 @@ transform: scale(0.7);
     background-color: white; 
     max-width: 380px; 
     width: 100%; 
-    /* height: 100px; */ 
-    /* min-height: 20px ; */ 
-    /* padding: 10px; */ 
+
     right: 20%; 
     top: 100%; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
@@ -603,7 +576,6 @@ transform: scale(0.7);
     .gendSelDef { 
       transition: all 0.2s; 
       font-size: 15px; 
-      /* display: none; */ 
     } 
   } 
   .subButton, 
@@ -665,7 +637,6 @@ transform: scale(0.7);
       top: 35%; 
       font-size: 12px;
 
-/* display: none; */ 
     } 
  
   }    .selDefText { 
@@ -725,7 +696,6 @@ transform: scale(0.7);
       transition: all 0.2s; 
       top: 30%; 
       font-size: 8px; 
-      /* display: none; */ 
     } 
  
     .selDefText { 
@@ -740,7 +710,6 @@ transform: scale(0.7);
     .gendSelDef, 
     .selOpt { 
       top: 7%; 
-      /* left: 2%; */ 
     } 
   } 
   .box, 

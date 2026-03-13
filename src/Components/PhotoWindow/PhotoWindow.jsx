@@ -57,7 +57,7 @@ export const PhotoWindow = () => {
         setLikedUsersNames(names);
     };
     useEffect(() => {
-        if(!photo) return;
+        if (!photo) return;
         showLikedUsers()
     }, [photo])
     const getTime = (uploadedAt) => {
@@ -84,13 +84,13 @@ export const PhotoWindow = () => {
     }
     return (
         <div className={styles.photoWindow}>
-            {openSendBox && <SendBox url={window.location.href} setOpenSendBox={setOpenSendBox}/>}
+            {openSendBox && <SendBox url={window.location.href} setOpenSendBox={setOpenSendBox} />}
             <audio src={commentSendAudio} ref={audioPlay}></audio>
             <audio src={likeAudio} ref={likeAudioPaly}></audio>
             <img src={photo?.url} alt="" />
             <div className={styles.comments}>
                 <span onClick={() => navigate(-1)}><Icon name={"xIcon"} size={"25px"} /></span>
-                <div className={styles.userinfo}>
+                <div className={styles.userinfo} onClick={() => navigate(`/home/userPage/${user.id}`)}>
                     <img src={user?.profile_image} alt="" />
                     <div className={styles.nameTime}>
                         <h4>{user?.fname} {user?.lname}</h4>

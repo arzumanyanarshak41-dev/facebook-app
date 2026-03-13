@@ -32,6 +32,12 @@
         border-radius: 13px;
         background-color: #f1f2f5;
         padding: 5px 10px;
+        input{
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            outline: none;
+        }
     }
 
     .chatFilter {

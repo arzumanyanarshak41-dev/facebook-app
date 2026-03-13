@@ -8,7 +8,6 @@ export const ImportantIcon = () => {
       height="16"
       fill="currentColor"
       className={style.ImportIcon}
-      // className="bi bi-exclamation-circle"
       color="#d31130"
       viewBox="0 0 16 16"
     >

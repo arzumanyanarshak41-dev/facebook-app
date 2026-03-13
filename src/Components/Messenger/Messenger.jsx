@@ -10,18 +10,18 @@ export const Messenger = () => {
     const users = useSelector(state => state.users)
     const logedUser = useSelector(state => state.logedUser)
     const [person, setPerson] = useState({ id: null, choosed: false })
+    const [filterChats, setFilterChats] = useState([])
     const dispatch = useDispatch()
     const navigate = useNavigate()
     let id;
     useEffect(() => {
-        if (!id && users.length > 0) {
-            const firstFriend = users.find(u => logedUser?.friends?.includes(u.id))
-            if (firstFriend) {
-                id = firstFriend.id
-                return
-            }
-        }
-    }, [id, users, logedUser])
+        setFilterChats(
+            users.filter(u =>
+                logedUser?.friends?.includes(u.id) ||
+                logedUser?.messages?.some(m => m.friendId === u.id)
+            )
+        )
+    }, [])
     async function isSeen(friendId) {
 
         const updatedMessages = logedUser.messages.map(m =>
@@ -41,6 +41,14 @@ export const Messenger = () => {
         })
         dispatch(setSeen(friendId))
     }
+    function filterChatsFunc(search = "") {
+        const filtered = users.filter(u =>
+            (logedUser?.friends?.includes(u.id) ||
+                logedUser?.messages?.some(m => m.friendId === u.id)) &&
+            (`${u.fname} ${u.lname}`.toLowerCase().includes(search.toLowerCase()))
+        );
+        setFilterChats(filtered);
+    }
     return person.choosed ? (
         <PersonMessenger id={person?.id} setPerson={setPerson} />
     ) : (
@@ -54,19 +62,38 @@ export const Messenger = () => {
             </div>
             <button className={styles.openSearch}>
                 <Icon name={"Search"} size={"20px"} />
-                <p>Search on messenger</p>
+                <input type="text" placeholder='Search on messenger' onChange={(e) => filterChatsFunc(e.target.value)} />
             </button>
             <div className={styles.chatFilter}>
-                <button>All</button>
-                <button>Unread</button>
+                <button onClick={() => {
+                    setFilterChats(
+                        users.filter(u =>
+                            logedUser?.friends?.includes(u.id) ||
+                            logedUser?.messages?.some(m => m.friendId === u.id)
+                        )
+                    )
+                }}>
+                    All
+                </button>
+                <button
+                    onClick={() => {
+                        const unreadIds = logedUser.messages
+                            .filter(m => m.seen === true)
+                            .map(m => m.friendId)
+
+                        const unreadUsers = users.filter(u =>
+                            unreadIds.includes(u.id)
+                        )
+
+                        setFilterChats(unreadUsers)
+                    }}
+                >
+                    Unread
+                </button>
             </div>
             <div className={styles.chats}>
-                {users
-                    .filter(u =>
-                        logedUser?.friends?.includes(u.id) ||
-                        logedUser?.messages?.some(m => m.friendId === u.id)
-                    )
-                    .sort((a, b) => {
+                {filterChats?.
+                    sort((a, b) => {
                         const aMsg = logedUser?.messages?.find(m => m.friendId === a.id)?.message || [];
                         const bMsg = logedUser?.messages?.find(m => m.friendId === b.id)?.message || [];
                         const aLast = aMsg.length ? new Date(aMsg[aMsg.length - 1].time) : 0;

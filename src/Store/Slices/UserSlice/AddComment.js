@@ -25,7 +25,6 @@ export const addComment = createAsyncThunk("users/addComment",
         const newNotifications = newNot
             ? [...response.data.notifications, newNot]
             : response.data.notifications;
-        console.log("whoId:", whoId, typeof whoId);
         await axios.patch(`http://localhost:3010/users/${whoId}`, {
             photos: newPhotos,
             notifications: newNotifications

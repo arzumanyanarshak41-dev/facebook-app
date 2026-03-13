@@ -10,9 +10,7 @@ import { addPost, selectUsers } from '../../../Store/Slices/UserSlice/UserSlice'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 export const GottaAddPost = ({ setOpenPosting }) => {
-    const { id } = useParams()
-    const users = useSelector(selectUsers)
-    const logedUser = users.find(el => el.id == id)
+    const logedUser = useSelector(logedUserSelect)
     const [colorsOpen, setColorsOpen] = useState(true)
     const [selectedColor, setSelectedColor] = useState("blue")
     const [selectedImage, setSelectedImage] = useState(null);
@@ -61,8 +59,8 @@ export const GottaAddPost = ({ setOpenPosting }) => {
     return (
         <form className={styles.gottaAddPost} onSubmit={onSub}
             style={
-                window.location.href === "http://localhost:3000/home/userpage"
-                    ? { top: "-250px", left: "20%" }
+                !(window.location.href.endsWith("home") || window.location.href.endsWith("home"))
+                    ? { top: "-350px", left: "20%" }
                     : {}
             }
         >

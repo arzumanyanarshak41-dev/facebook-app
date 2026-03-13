@@ -27,6 +27,20 @@
           "status": "like",
           "linkId": "photo1",
           "time": "2026-03-11T21:41:17.575Z"
+        },
+        {
+          "id": "Fri Mar 13 2026 05:36:31 GMT+0400 (Armenia Standard Time)",
+          "userid": "9000000000005",
+          "status": "friend",
+          "linkId": "9000000000001",
+          "time": "2026-03-13T01:36:31.814Z"
+        },
+        {
+          "id": "1773368424689",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo1",
+          "time": "2026-03-13T02:20:24.689Z"
         }
       ],
       "shorts": [
@@ -114,6 +128,17 @@
           "friendId": "9000000000004",
           "message": [],
           "seen": false
+        },
+        {
+          "friendId": "1773340831659",
+          "message": [
+            {
+              "sender": "him",
+              "text": "Hi Alice",
+              "time": "05:28 AM"
+            }
+          ],
+          "seen": true
         }
       ],
       "friends": [
@@ -124,7 +149,7 @@
       ],
       "password": "pass01",
       "islog": "home",
-      "lastSeen": "12:48 AM",
+      "lastSeen": "7:51 AM",
       "Cover_Photo": "blob:http://localhost:3000/fca604e2-8d1b-4c92-9d81-9a63c75661f1"
     },
     {
@@ -236,7 +261,15 @@
       "lname": "Brown",
       "email": "charlie.brown@example.com",
       "usname": "charlie03",
-      "notifications": [],
+      "notifications": [
+        {
+          "id": "1773368428708",
+          "userid": "9000000000003",
+          "status": "like",
+          "linkId": "photo3",
+          "time": "2026-03-13T02:20:28.708Z"
+        }
+      ],
       "shorts": [
         {
           "id": "shorts3",
@@ -268,7 +301,8 @@
           "description": "Kitchen aestetics 🍽️",
           "uploaded_at": "2026-02-20T11:21:43Z",
           "likes": [
-            "9000000000002"
+            "9000000000002",
+            "9000000000003"
           ],
           "comments": [
             {
@@ -344,19 +378,9 @@
               "sender": "him",
               "text": "Hi Im text you abhout MacBook",
               "time": "01:32 AM"
-            },
-            {
-              "sender": "me",
-              "text": "Hi Gay",
-              "time": "01:35 AM"
-            },
-            {
-              "sender": "me",
-              "text": "like",
-              "time": "01:35 AM"
             }
           ],
-          "seen": true
+          "seen": false
         }
       ],
       "friends": [
@@ -366,7 +390,7 @@
       ],
       "password": "pass03",
       "islog": "home",
-      "lastSeen": "online",
+      "lastSeen": "7:51 AM",
       "Cover_Photo": "blob:http://localhost:3000/75c30f24-0ce7-4ff8-9378-579f63412b37"
     },
     {
@@ -619,7 +643,7 @@
       ],
       "password": "pass05",
       "islog": "home",
-      "lastSeen": "online"
+      "lastSeen": "5:36 AM"
     },
     {
       "id": "1773263918905",
@@ -627,7 +651,29 @@
       "lname": "Agagyulyan",
       "email": "",
       "usname": "serzhagagyulyan",
-      "notifications": [],
+      "notifications": [
+        {
+          "id": "Fri Mar 13 2026 05:18:53 GMT+0400 (Armenia Standard Time)",
+          "userid": "1773340831659",
+          "status": "friend",
+          "linkId": "1773263918905",
+          "time": "2026-03-13T01:18:53.955Z"
+        },
+        {
+          "id": "Fri Mar 13 2026 05:19:25 GMT+0400 (Armenia Standard Time)",
+          "userid": "1773340831659",
+          "status": "friend",
+          "linkId": "1773263918905",
+          "time": "2026-03-13T01:19:25.049Z"
+        },
+        {
+          "id": "Fri Mar 13 2026 05:20:59 GMT+0400 (Armenia Standard Time)",
+          "userid": "1773340831659",
+          "status": "friend",
+          "linkId": "1773263918905",
+          "time": "2026-03-13T01:20:59.433Z"
+        }
+      ],
       "shorts": [],
       "photos": [],
       "profile_image": "https://static.vecteezy.com/system/resources/previews/047/733/682/non_2x/grey-avatar-icon-user-avatar-photo-icon-social-media-user-icon-vector.jpg",
@@ -659,7 +705,18 @@
       "gender": "male",
       "phone": "",
       "bdate": "2003-08-06",
-      "messages": [],
+      "messages": [
+        {
+          "friendId": "9000000000001",
+          "message": [
+            {
+              "sender": "me",
+              "text": "Hi Alice",
+              "time": "05:28 AM"
+            }
+          ]
+        }
+      ],
       "friends": [
         "9000000000001"
       ],

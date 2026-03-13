@@ -3,10 +3,12 @@ import { Icon } from '../../SVG/Icon'
 import styles from './SearchGeneral.module.css'
 import { useSelector } from 'react-redux'
 import { selectUsers } from '../../Store/Slices/UserSlice/UserSlice'
+import { useNavigate } from 'react-router-dom'
 
 export const SearchGeneral = ({ setOpen }) => {
     const users = useSelector(selectUsers)
     const [search, setSearch] = useState("")
+    const navigate = useNavigate()
     const filtered = useMemo(() => {
         if (search.trim() == "") return [];
         return users.filter(el => el.fname.startsWith(search) || el.lname.startsWith(search) || el.usname.startsWith(search))
@@ -22,7 +24,10 @@ export const SearchGeneral = ({ setOpen }) => {
                     {
                         filtered.map(user => {
                             return (
-                                <div className={styles.userShowBox}>
+                                <div className={styles.userShowBox} onClick={() => {
+                                    setOpen(false)
+                                    navigate(`/home/userPage/${user.id}`)
+                                }}>
                                     <img src={user.profile_image} alt="" />
                                     <div className={styles.userInfo}>
                                         <h4>{user.fname} {user.lname}</h4>

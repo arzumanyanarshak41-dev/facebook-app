@@ -169,7 +169,6 @@ export const SignUpPage = () => {
             action.sort.onType === "dateDayStyl" &&
             (action.sort.payload === "31" || action.sort.payload === "30") &&
             state.dateMonthStyl.value === "2"
-            //
           ) {
             return {
               ...state,
@@ -310,9 +309,7 @@ export const SignUpPage = () => {
       islog: "home",
       lastSeen: "online",
     };
-    console.log(1);
     const findUser = users.some(el => (newUser.email && el.email === newUser.email) || (newUser.phone && el.phone === newUser.phone));
-    console.log(findUser);
 
     if (findUser) {
       setopenCancel(true)
@@ -429,7 +426,6 @@ export const SignUpPage = () => {
           )}
         </div>
 
-        {/* <p className={style.underText}>Как вас зовут?</p> */}
       </section>
       <div className={style.underTextNameHolder}>
         <span className={style.underTextHolder}>
@@ -487,7 +483,6 @@ export const SignUpPage = () => {
           className={state.dateDayStyl.style}
         >
           <p className={`${style.day} `}>Day</p>
-          {/* ${state.dateDayStyl} */}
           <select
             value={state.dateDayStyl.value}
             onChange={(e) =>

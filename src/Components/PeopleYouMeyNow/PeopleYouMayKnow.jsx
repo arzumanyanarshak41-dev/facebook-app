@@ -8,7 +8,6 @@ export const PeopleYouMayKnow = () => {
   const { id } = useParams()
   const users = useSelector(selectUsers)
   const logedUser = users.find(el => el.id == id)
-  console.log(logedUser.friends);
 
   return (
     <div className={styles.peopleYouMayKnow}>

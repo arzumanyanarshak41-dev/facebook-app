@@ -54,6 +54,13 @@
         span {
             color: rgba(128, 128, 128, 0.435);
         }
+        p{
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        p:hover{
+            text-decoration: underline;
+        }
     }
 
     button {
